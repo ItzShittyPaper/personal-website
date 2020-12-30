@@ -1,0 +1,23 @@
+body {
+    background-color: #1c2638;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: 1920px, 940px;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #39707a;
+    margin-left: 20px;
+}
+
+p {
+    color: #23495d;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+}
