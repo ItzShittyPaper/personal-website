@@ -1,0 +1,28 @@
+body {
+    background-color: #1c2638;
+}
+
+h1 {
+    color: #39707a;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #23495d;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+p2 {
+    color: #9b222b;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+p3 {
+    color: #daf2e9;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
