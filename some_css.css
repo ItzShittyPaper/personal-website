@@ -1,28 +1,41 @@
 body {
-    background-color: #1c2638;
+    background-color:#000000
 }
 
 h1 {
-    color: #39707a;
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
+    
+    font-family: "Helvetica Neue";
+    font-size: 72px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 36px;
+
+    position: absolute;
+    top: 20%;
+    left: 2%;
+
 }
 
 p {
-    color: #23495d;
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 48px;
+    
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    
 }
 
-p2 {
-    color: #9b222b;
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-p3 {
-    color: #daf2e9;
-    margin-left: 20px;
-    margin-top: 40px;
-    font-family: 'Poppins', sans-serif;
+video {
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
 }
