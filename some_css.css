@@ -3,38 +3,15 @@ body {
 }
 
 h1 {
-    
-    font-family: "Helvetica Neue";
-    font-size: 72px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    line-height: 36px;
-
-    position: absolute;
-    top: 20%;
-    left: 2%;
-
-}
-
-p {
-    
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 48px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 48px;
-}
-
-
-.button {
-  background-color: #ea7d27; /* Orange, Applle II Pallete */
-  border: none;
-  color: white;
-  padding: 15px 32px;
+  
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 5px solid cyan;
+  padding: 10px;
 }
