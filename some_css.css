@@ -1,12 +1,13 @@
 body {
-    background-color:#514888
+    background-color: black;
 }
 
 h1 {
   
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  
+  color: white;
+    
 }
 
 .center {
