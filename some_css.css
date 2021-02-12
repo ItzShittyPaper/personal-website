@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #efefef;
 }
 
 h1 {
@@ -7,12 +7,29 @@ h1 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   color: white;
+  size: 36px;
+    
+}
+
+p1 {
+    
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    size:12px;
     
 }
 
 .center {
-  margin: auto;
-  width: 50%;
-  border: 5px solid cyan;
-  padding: 10px;
+    margin: auto;
+    width: 50%;
+    border: 5px solid cyan;
+    padding: 10px;
+}
+
+.menu {
+    
+    margin: auto, -webkit-auto;
+    width: 80%;
+    
 }
