@@ -6,7 +6,7 @@ h1 {
   
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: white;
+  color: black;
   size: 36px;
     
 }
@@ -15,7 +15,7 @@ p1 {
     
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: white;
+    color: black;
     size:12px;
     
 }
@@ -23,7 +23,7 @@ p1 {
 .center {
     margin: auto;
     width: 50%;
-    border: 5px solid cyan;
+    border: 5px solid lightpink;
     padding: 10px;
 }
 
