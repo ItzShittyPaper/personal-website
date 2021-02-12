@@ -30,9 +30,15 @@ p1 {
 .menu {
     
     margin: auto, -webkit-auto;
-    width: 50%;
-    vertical-align: center;
+    width: 69%;
+    margin: auto;
     padding: 10px;
     border: 10px solid lightpink;
     transparent: 20%;
+}
+
+img {
+    
+    margin: auto;
+    
 }
