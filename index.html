@@ -28,6 +28,14 @@
 				text-align: center;
 
 			}
+			h2 {
+			
+				color:#ffffff;
+				font-family: 'Ubuntu Mono', monospace;
+				text-align: center;
+				size: 24;
+			
+			}
 			.doggo {
 
 				text-align: center;
@@ -50,13 +58,69 @@
 				width: 500px;
 			
 			}
+
+			.sidebar {
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+			  background-color: #f1f1f1;
+			  position: fixed;
+			  height: 100%;
+			  overflow: auto;
+			}
+
+			/* Sidebar links */
+			.sidebar a {
+			  display: block;
+			  color: black;
+			  padding: 16px;
+			  text-decoration: none;
+			}
+
+			/* Active/current link */
+			.sidebar a.active {
+			  background-color: #04AA6D;
+			  color: white;
+			}
+
+			/* Links on mouse-over */
+			.sidebar a:hover:not(.active) {
+			  background-color: #555;
+			  color: white;
+			}
+
+			/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+			div.content {
+			  margin-left: 200px;
+			  padding: 1px 16px;
+			  height: 1000px;
+			}
+
+			/* On screens that are less than 700px wide, make the sidebar into a topbar */
+			@media screen and (max-width: 700px) {
+			  .sidebar {
+			    width: 100%;
+			    height: auto;
+			    position: relative;
+			  }
+			  .sidebar a {float: left;}
+			  div.content {margin-left: 0;}
+			}
+
+			/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+			@media screen and (max-width: 400px) {
+			  .sidebar a {
+			    text-align: center;
+			    float: none;
+			  }
+			}
 			
 		</style>
 
 	</head>
 	<body>
-		
-		<div class="doggo">
+	
+		<div class="doggo" id="home">
 			<pre>       ___ _       _     _               </pre>
 			<pre> _____| | | |_ _ _| |___| |_ _ _ ___ ___ </pre>
 			<pre>|     |_  | '_| | | | .'|  _| | |  _| .'|</pre>
@@ -65,13 +129,31 @@
 			<h1></h1>
 			<h1>------------------------</h1>
 			<h1></h1>
-
-			<a href="http://niezesrajsie.tk/music/ibm_cp%20(wersja%20z%20nisk%C4%85%20jako%C5%9Bci%C4%85%20do%20wysy%C5%82ania).zip">Download my album!<a>
-				<h1></h1>
-					<img src="https://niezesrajsie.tk/img/ibm_cp.cover.jpg" alt="ibm_cp (here is the album cover, but you cant see that - why? i dont know" width=500px height=500px>
-
 		</div>
-
+		<div class="music" id="music">
+			<a href="http://niezesrajsie.tk/music/ibm_cp%20(wersja%20z%20nisk%C4%85%20jako%C5%9Bci%C4%85%20do%20wysy%C5%82ania).zip">Download my album!<a>
+			<h1></h1>
+			<img src="https://niezesrajsie.tk/img/ibm_cp.cover.jpg" alt="ibm_cp (here is the album cover, but you cant see that - why? i dont know" width=500px height=500px>
+		</div>
+				
+		<div class="karatemp3" id="karatemp3">
+			<h2>KarateMp3</h2>
+			<a href="https://niezesrajsie.tk/KarateMp3/karate-bin">Download For Linux</a>
+			<a>Windows version coming soon</a>
+			<a>-----------------------------</a>
+			<a href="https://github.com/ItzShittyPaper/KarateMp3.git">Clone the source code with git</a>
+		</div>
+		
+		<div class="youtube" id="youtube">
+			<a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Link to my YouTube.</a>
+		</div>
+				
+		<div class="sidebar">
+  			<a class="a" href="https://niezesrajsie.tk/index.html#home">Main Page</a>
+  			<a href="https://niezesrajsie.tk/index.html#music">Music</a>
+  			<a href="https://niezesrajsie.tk/index.html#karatemp3">KarateMp3</a>
+  			<a href="https://niezesrajsie.tk/index.html#youtube">Youtube</a>
+		</div>
 	</body>
 		
 </html>
