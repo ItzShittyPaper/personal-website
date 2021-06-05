@@ -1,0 +1,75 @@
+.body{
+    animation: body 3s cubic-bezier(.66,.07,.27,.99);
+    position: absolute;
+    top: 0;
+}
+
+.welcome-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    animation: welcome-text 3s cubic-bezier(.66,.07,.27,.99);
+    text-align: center;
+}
+.album{
+    width: 300px;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 10px;
+}
+.album .img,
+.album img{
+    width: 300px;
+    transition: 0.1s;
+}
+.album img{
+    filter: blur(0px) brightness(0.6);
+}
+.album button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 35px;
+    border: 2px white solid;
+    color: White;
+    background: transparent;
+    transition: 0.1s;
+    opacity: 0.6;
+}
+.album button:hover{
+    opacity: 1;
+}
+.right{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+.windows{
+    color: var(--light-darker);
+    cursor: not-allowed;
+}
+.cards{
+    width: 300px;
+    display: flex;
+    width: 650px;
+}
+.source-code-karate{
+    width: 275px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .body{
+        display: flex;
+    }
+    .cards{
+        display: inline;
+    }
+}
