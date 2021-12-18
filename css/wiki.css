@@ -61,12 +61,22 @@ a {
 
 h2 {
 
-  color: #ff6500;				
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;				
 
 }
 
 p {
 
   font-family: 'IBM Plex Mono', monospace;
+
+}
+
+span {
+
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
 
 }
