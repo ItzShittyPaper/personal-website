@@ -78,38 +78,6 @@
                                                             globals.glockAmmo = globals.glockAmmo - 1
                                                         4:
                                                             globals.sniperAmmo = globals.sniperAmmo - 1
-            
-                                    <span class="hljs-keyword">else</span>:
-            
-                                        <span class="hljs-keyword">if</span> raycast.is_colliding():
-                                            raycast.translation = lerp(camera.translation, 
-                                                Vector3(rand_range(spread, -spread), 
-                                                rand_range(spread, -spread), 0), 0.5)
-            
-                                            var b = bullet.instance()
-            
-                                            # weapon check here
-                                            <span class="hljs-keyword">if</span> globals.current_weapon == 1:
-                                                mp5_muzzle.add_child(b)
-                                                b.look_at(raycast.get_collision_point(), Vector3.UP)
-                                                b.shoot = <span class="hljs-keyword">true</span>
-                                                print(<span class="hljs-string">"mp5 fired"</span>)
-                                                globals.mp5Ammo = globals.mp5Ammo - 1
-                                            elif globals.current_weapon == 2:
-                                                glock_muzzle.add_child(b)
-                                                b.look_at(raycast.get_collision_point(), Vector3.UP)
-                                                b.shoot = <span class="hljs-keyword">true</span>
-                                                print(<span class="hljs-string">"glock fired"</span>)
-                                                globals.glockAmmo = globals.glockAmmo - 1
-                                            elif globals.current_weapon == 3:
-                                                b.shoot = <span class="hljs-keyword">true</span>
-                                                print(<span class="hljs-string">"shotgun fired"</span>)
-                                                globals.shotgunAmmoInMagazine = globals.shotgunAmmoInMagazine - 1
-                                            elif globals.current_weapon == 4:
-                                                sniper_muzzle.add_child(b)
-                                                b.look_at(raycast.get_collision_point(), Vector3.UP)
-                                                b.shoot = <span class="hljs-keyword">true</span>
-                                                globals.sniperAmmo = globals.sniperAmmo - 1
             </code></pre><p>Yes, it is broken. </p>
             <p>Aside from conventional shit code there are some things that we need to polish, for example the weapon selection system, zoom in thing or something like that (used for sniping), and ladders. i fucking hate those things.</p>
             <h2 id="what-s-actually-in-the-game-">What&#39;s actually in the game?</h2>
