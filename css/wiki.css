@@ -76,6 +76,12 @@ p {
 
 }
 
+li {
+
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
 code {
 
   font-family: 'IBM Plex Mono', monospace;
