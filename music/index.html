@@ -15,7 +15,7 @@
 		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -69,6 +69,15 @@
 			  align-content: center;
 
 			}
+    
+    			.grid {
+
+              			display: grid;
+              			grid-template-columns: repeat(2, 1fr);
+              			gap: 10px;
+              			grid-auto-rows: minmax(100px, auto);
+
+			}
 
 			.ibm_cp {
 
@@ -112,6 +121,20 @@
 
 			}
 
+			.house {
+
+			  background-color: #bbb9bc;
+			  text-align: center;
+			  width: 102%;
+			  margin: auto;
+			  align-content: center;
+			  position: relative;
+			  left: -1%;
+			  padding-bottom: 8px;	
+			  padding-top: 4px;
+
+            		}	
+    
 			.other {
 
 			  text-align: center;
@@ -147,7 +170,7 @@
 			img {
 
 			  height: auto;
-			  max-width: 50vh;
+			  max-width: 75%;
 
 
 			}
@@ -157,66 +180,69 @@
 	
 		<nav>
 			<a href="../index.html">Home</a>
-			&bull;
+			•
 			<a href="../m4kulatura-wiki/index.html">Wiki</a> 
-			&bull;
+			•
 			<a href="../music/index.html">Music</a> 
-			&bull;
+			•
 			<a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
-			&bull;
+			•
 			<a href="../library/index.html">Library</a> 
-			&bull;
+			•
 			<a href="../portfolio-maybe/index.html">About Me</a>
 		</nav>
 
 		<br>
 
-		<div class="ibm_cp">
+        <div class="grid">
+
+        	<div class="ibm_cp">
 				
 			<p>ibm_cp</p>
 			<img src="../img/ibm_cp.cover.png" alt=" ">
 			<br>
 			<a href="https://anonfiles.com/j4WaV6Pdub/ibm_cp_zip">Download Link</a>
 
-		</div>
-
-		<div class="m4kulaturamusic">
+		</div><div class="m4kulaturamusic">
 		
 			<p>m4kulaturamusic</p>
 			<img src="../img/m4kulaturamusic.cover.png" alt=" ">
 			<br>
 			<a href="https://anonfiles.com/B9efW7Pcud/m4kulaturamusic_zip">Download Link</a>
 
-		</div>
-
-		<div class="tracking">
+		</div><div class="tracking">
 		
 			<p>Tracking Devices</p>
 			<img src="../img/trackingdevices-cover.png" alt=" ">
 			<br>
 			<a href="https://mega.nz/file/dG4TiaDK#OmE7ubjoY_R1O7QZY7FDNh9E7aY9XHSc6ohTeSd3qDM">Download Link</a>
 
-		</div>
+		</div><div class="house">
 		
+			<p>Chastity House</p>
+			<img src="../img/cover.png" alt=" ">
+			<br>
+			<a href="https://mega.nz/file/NXIzBSpQ#Bi1xgvVaHVjRpLa-4ULB5h_0ip0m6Pwx22AMyigjYJY">Download Link</a>
+
+		</div>
+	</div>
 		<div class="other">
 		
 			<h1>Other Stuff</h1>
 			<br>
 			<p>Disasterpiece</p>
-			<audio controls>
+			<audio controls="">
   				<source src="lib/disasterpiece.ogg" type="audio/ogg">
 			</audio> 
 			<p>Slow Racer</p>
-			<audio controls>
+			<audio controls="">
   				<source src="lib/slowracer.ogg" type="audio/ogg">
 			</audio> 
 			<p>Milkydance</p>
-			<audio controls>
+			<audio controls="">
   				<source src="lib/milkydance.ogg" type="audio/ogg">
 			</audio> 
 
 		</div>
-
 	</body>
-
 </html>
