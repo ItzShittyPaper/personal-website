@@ -1,4 +1,4 @@
 # Strona-na-informatyke-lol
-lol
+my own website
 
 
