@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&display=swap');
+
+body {
+
+  background-color: #0097ff;
+	font-family: 'IBM Plex Mono', monospace;
+
+}
+
+pre {
+
+  color: #000000;
+  margin: auto;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
+h1 {
+
+  margin: auto;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.nigger {
+
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  align-content: center;
+
+}
+
+.grid {
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	width: 75%;
+	margin: auto;
+
+}
+
+.ibm_cp {
+
+  background-color: #7facff;
+  text-align: center;
+  width: 102%;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  left: -1%;
+  padding-bottom: 8px;	
+  padding-top: 4px;
+
+}
+
+.m4kulaturamusic {
+
+  background-color: #7e7e7d;
+  text-align: center;
+  width: 102%;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  left: -1%;
+  padding-bottom: 8px;	
+  padding-top: 4px;
+
+}
+
+.tracking {
+
+  background-color: #7f7069;
+  text-align: center;
+  width: 102%;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  left: -1%;
+  padding-bottom: 8px;	
+  padding-top: 4px;
+
+}
+
+.house {
+
+  background-color: #b6b2b3;
+  text-align: center;
+  width: 102%;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  left: -1%;
+  padding-bottom: 8px;	
+  padding-top: 4px;
+
+}	
+
+.other {
+
+  text-align: center;
+  width: 102%;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  left: -1%;
+  padding-bottom: 8px;	
+  padding-top: 4px;
+
+}
+
+.modules {
+
+  text-align: center;
+  width: 102%;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  left: -1%;
+  padding-bottom: 8px;	
+  padding-top: 4px;
+
+}
+
+a {
+
+  align: center;
+  margin: auto;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
+p { 
+
+  margin: auto;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
+img {
+
+  height: auto;
+  max-width: 75%;
+
+
+}

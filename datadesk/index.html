@@ -1,0 +1,65 @@
+<link rel="stylesheet" type="text/css" href="/css/nav.css">
+<div class="nigger">
+  <nav id="nav" class="nav justify-content-center">
+
+	  <a href="/index.html">Home</a> 
+	  &bull;
+	  <a href="/wiki/">M4kulatura Wiki</a> 
+	  &bull;
+	  <a href="/music/">Music</a> 
+	  &bull;
+	  <a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
+	  &bull;
+	  <a href="/reserve/">Reserve</a> 
+	  &bull;
+    	  <a href="/about/">About Me</a>
+
+  </nav>
+</div>
+<link rel="stylesheet" type="text/css" href="/blog.css">
+<header><h1>Datadesk: What is it?</h1></header>
+<article>
+<p>The worst document format that exists, and why i made it.</p>
+<h2 id="but-tell-me-what-the-fuck-is-it">But tell me: What the fuck is it?</h2>
+<p>Datadesk (DS) is an interpreted markup language that bridges the gap between images and text files.
+Characters and sentences are placed by the user on a matrix.</p>
+<p>DS has 4 main commands:</p>
+<ol>
+<li>/s - writes a sentence to the screen, automatically placing multiple lines until the end of the command (/e).</li>
+<li>/r - draws a rectangle on the screen.</li>
+<li>/e - ends the /s command (and every command that has a dynamic argument number).</li>
+<li>/  - used only once, &ldquo;/&rdquo; means the scene root in a datadesk source file.</li>
+</ol>
+<p>There is also a line numbering argument for /s evoked by the letter &ldquo;L&rdquo; like this: <code>/sL</code></p>
+<p>The language uses a pass-based syntax in which the return key separates different passes.
+This approach makes writing software with datadesk in mind really easy.
+It works like this:</p>
+<ul>
+<li>1st pass: the y coordinate</li>
+<li>2nd pass: the x coordinate</li>
+<li>3rd pass: the command / a character</li>
+</ul>
+<p>If the 3rd pass is a command there are arguments after the pass; Technically these are called &ldquo;Optional passes&rdquo;.
+The y coordinate is specified first because ncurses works the same way.
+Even if it feels weird at first, it is really simple in the long run.
+This decision makes sense because people first specify the row (y), and then the column (x).</p>
+<h2 id="the-drawer-interpreter">The DRAWER interpreter.</h2>
+<p>DRAWER (DRAWER Reference Alpha-stage Working without Errors and it&rsquo;s Robust as fuck) interpreter, is a ncurses based DS interpreter made by me from scratch.
+Currently it only has around 200 lines of code and it&rsquo;s extremely minimal. You can use DRAWER with the following command.</p>
+<p><code>drawer &lt;path to the ds source file.ds&gt;</code></p>
+<p>The document is shown after the execution of that command, you can close the interpreter with F12.
+<code>drawer -h</code> shows you the version of drawer and cli arguments that you can use with it.
+<code>drawer -d</code> shows you a datadesk demo file containing some nice art, graphics etc.</p>
+<h2 id="datadesk-the-sequel-what-will-follow-ds1">Datadesk: The sequel (what will follow DS1?)</h2>
+<p>I&rsquo;m currently planning on adding support on multiple pages in the same document and adding variables.
+Maybe i will do things such as block quotes and support for slanted and bold text.</p>
+<p>DS3 will probably have some interactive elements added as well.</p>
+<h2 id="what-happened-to-your-previous-project-allcom">What happened to your previous project, allcom?</h2>
+<p>I lost motivation and cancelled the game. That&rsquo;s it.</p>
+<br>
+<br>
+<br>
+<a>copyright lololol</a>
+<br>
+<a>made by m4kulatura</a>
+

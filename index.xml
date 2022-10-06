@@ -1,0 +1,335 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>zesrajsie.tk</title>
+	<link>https://zesrajsie.tk/</link>
+	<description>Recent content on zesrajsie.tk</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Thu, 06 Oct 2022 22:03:49 +0200</lastBuildDate>
+    
+        <atom:link href="https://zesrajsie.tk/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Datadesk: What is it?</title>
+		<link>https://zesrajsie.tk/datadesk/</link>
+		<pubDate>Thu, 06 Oct 2022 22:03:49 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/datadesk/</guid>
+		<description>&lt;p&gt;The worst document format that exists, and why i made it.&lt;/p&gt;
+&lt;h2 id=&#34;but-tell-me-what-the-fuck-is-it&#34;&gt;But tell me: What the fuck is it?&lt;/h2&gt;
+&lt;p&gt;Datadesk (DS) is an interpreted markup language that bridges the gap between images and text files.
+Characters and sentences are placed by the user on a matrix.&lt;/p&gt;
+&lt;p&gt;DS has 4 main commands:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;/s - writes a sentence to the screen, automatically placing multiple lines until the end of the command (/e).&lt;/li&gt;
+&lt;li&gt;/r - draws a rectangle on the screen.&lt;/li&gt;
+&lt;li&gt;/e - ends the /s command (and every command that has a dynamic argument number).&lt;/li&gt;
+&lt;li&gt;/  - used only once, &amp;ldquo;/&amp;rdquo; means the scene root in a datadesk source file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is also a line numbering argument for /s evoked by the letter &amp;ldquo;L&amp;rdquo; like this: &lt;code&gt;/sL&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The language uses a pass-based syntax in which the return key separates different passes.
+This approach makes writing software with datadesk in mind really easy.
+It works like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1st pass: the y coordinate&lt;/li&gt;
+&lt;li&gt;2nd pass: the x coordinate&lt;/li&gt;
+&lt;li&gt;3rd pass: the command / a character&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the 3rd pass is a command there are arguments after the pass; Technically these are called &amp;ldquo;Optional passes&amp;rdquo;.
+The y coordinate is specified first because ncurses works the same way.
+Even if it feels weird at first, it is really simple in the long run.
+This decision makes sense because people first specify the row (y), and then the column (x).&lt;/p&gt;
+&lt;h2 id=&#34;the-drawer-interpreter&#34;&gt;The DRAWER interpreter.&lt;/h2&gt;
+&lt;p&gt;DRAWER (DRAWER Reference Alpha-stage Working without Errors and it&amp;rsquo;s Robust as fuck) interpreter, is a ncurses based DS interpreter made by me from scratch.
+Currently it only has around 200 lines of code and it&amp;rsquo;s extremely minimal. You can use DRAWER with the following command.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;drawer &amp;lt;path to the ds source file.ds&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The document is shown after the execution of that command, you can close the interpreter with F12.
+&lt;code&gt;drawer -h&lt;/code&gt; shows you the version of drawer and cli arguments that you can use with it.
+&lt;code&gt;drawer -d&lt;/code&gt; shows you a datadesk demo file containing some nice art, graphics etc.&lt;/p&gt;
+&lt;h2 id=&#34;datadesk-the-sequel-what-will-follow-ds1&#34;&gt;Datadesk: The sequel (what will follow DS1?)&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m currently planning on adding support on multiple pages in the same document and adding variables.
+Maybe i will do things such as block quotes and support for slanted and bold text.&lt;/p&gt;
+&lt;p&gt;DS3 will probably have some interactive elements added as well.&lt;/p&gt;
+&lt;h2 id=&#34;what-happened-to-your-previous-project-allcom&#34;&gt;What happened to your previous project, allcom?&lt;/h2&gt;
+&lt;p&gt;I lost motivation and cancelled the game. That&amp;rsquo;s it.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Linux is dead (and we killed it)</title>
+		<link>https://zesrajsie.tk/linuxsucks/</link>
+		<pubDate>Thu, 06 Oct 2022 21:57:30 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/linuxsucks/</guid>
+		<description>&lt;p&gt;Look, it&amp;rsquo;s just my opinion. But Linux is truly dead.
+It has become unstable, bloated and unusable. Even Windows beats most popular distros in that regard.&lt;/p&gt;
+&lt;p&gt;Even &amp;ldquo;pro&amp;rdquo; distributions like Arch or Gentoo suffer from most of the problems that modern UNIX has.
+An example that i like to use is NetworkManager, a truly useless piece of software.
+This deamon really is just a workaround that makes systemd&amp;rsquo;s network system usable to your average Joe.&lt;/p&gt;
+&lt;p&gt;Other init-systems like openrc and runit just work.
+Yes - they require a dhcp service (if you even use dhcp) - but even then these init systems ship with at least working network setup tools.&lt;/p&gt;
+&lt;p&gt;But let&amp;rsquo;s analyze the downfall of Linux in detail&lt;/p&gt;
+&lt;h2 id=&#34;the-desktop&#34;&gt;The Desktop&lt;/h2&gt;
+&lt;p&gt;For me it all started with GNOME 3.
+I know I sound stupid because everyone bullies GNOME and systemd, but hear me out.&lt;/p&gt;
+&lt;p&gt;GNOME 2 was perfect.
+Ok, maybe not. Still it was really close to perfection. Why?
+It was easy to use, stable and customizable - everything you want from a desktop.&lt;/p&gt;
+&lt;p&gt;But then, from nowhere - gnome 3 appeared.
+They have scrapped everything they built since the 90s and started from scratch.
+And it wasn&amp;rsquo;t a success, actually, it was the Windows Vista of linux.&lt;/p&gt;
+&lt;p&gt;If someone came to my house with a gun and said &amp;ldquo;describe what gnome 3 in 2011 was in 5 seconds or i&amp;rsquo;ll shoot you&amp;rdquo; i would say that it was janky, very janky.
+I didn&amp;rsquo;t understand why the dev-team did this, and i don&amp;rsquo;t understand it now.
+After some time the GNOME team fixed their desktop, and it was actually pretty easy to use.
+Most popular distributions like ubuntu returned to their roots with shipping gnome again.
+But while all of this was happening, gnome 3 was the literal definition of a &amp;ldquo;dumpster fire&amp;rdquo; under the hood.
+Through time the team added too many unneceseary features to gnome and added systemd dependencies.
+Because of the popularity of systemd, no one saw this as a problem. But it really is.
+Now with GNOME 42 using 2 gigs idling i can confortably say that it won&amp;rsquo;t ever go back to it&amp;rsquo;s days of glory.&lt;/p&gt;
+&lt;p&gt;KDE had gone a simillar route, but with a happier ending overall.
+KDE 3 was the best alternative to GNOME 2, and the most customizable desktop of it&amp;rsquo;s time.
+In 2008 / 2009 KDE 4 was released. And you guessed it - it was a total disaster.
+Everybody hated this thing, it was barely usable. At least GNOME 3 didn&amp;rsquo;t crashed almost every time you wanted to change a theme.
+The succesor to KDE 4, Plasma is actually very successful to this day. It mostly reclaimed the desktop throne from KDE 3 / Trinity, and it is the favourite to this day.
+But it didn&amp;rsquo;t protect KDE from it&amp;rsquo;s jank.&lt;/p&gt;
+&lt;h3 id=&#34;kde-plasma-jank-list&#34;&gt;KDE Plasma jank list&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;a ton of confusing menus&lt;/li&gt;
+&lt;li&gt;QT5 is still a mess&lt;/li&gt;
+&lt;li&gt;Uses even more ram than GNOME&lt;/li&gt;
+&lt;li&gt;Outdated widgets&lt;/li&gt;
+&lt;li&gt;Feature Creep&lt;/li&gt;
+&lt;li&gt;Weird Design Choices&lt;/li&gt;
+&lt;li&gt;A shitty store app&lt;/li&gt;
+&lt;li&gt;Broken, unfinished app suite&lt;/li&gt;
+&lt;li&gt;Breeze theme is the only one that is actually usable and integrates with GTK&lt;/li&gt;
+&lt;li&gt;Unpolished, buggy animations&lt;/li&gt;
+&lt;li&gt;Bugs&lt;/li&gt;
+&lt;li&gt;Bugs!&lt;/li&gt;
+&lt;li&gt;Even More Bugs!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ok, let&amp;rsquo;s end it here.&lt;/p&gt;
+&lt;h2 id=&#34;systemd&#34;&gt;systemd&lt;/h2&gt;
+&lt;p&gt;From the other side of our linux coin is &lt;strong&gt;systemd&lt;/strong&gt;, a linux init system that creeped into every distro since Debian 7 codenamed &amp;ldquo;Jessie&amp;rdquo;
+Most people just don&amp;rsquo;t care enough about linux&amp;rsquo;s internal workings to hate systemd - it is still a usable and easy to use init system.
+I know that it&amp;rsquo;s a meme, but systemd really is the most bloated PID1 that ever existed, having a ton of useless services that shouldn&amp;rsquo;t even be there.&lt;/p&gt;
+&lt;h3 id=&#34;the-not-so-comprehensive-list-of-useless-soystemd-wonk-and-jank&#34;&gt;The not-so comprehensive list of useless soystemd wonk and jank&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;systemd-homed&lt;/li&gt;
+&lt;li&gt;systemd-logind&lt;/li&gt;
+&lt;li&gt;systemd-boot&lt;/li&gt;
+&lt;li&gt;systemd/Journal (yes, there are multiple naming conventions used there)&lt;/li&gt;
+&lt;li&gt;systemd-sysusers&lt;/li&gt;
+&lt;li&gt;systemd-nspawn&lt;/li&gt;
+&lt;li&gt;systemd-stub&lt;/li&gt;
+&lt;li&gt;systemd.mount (another naming convention)&lt;/li&gt;
+&lt;li&gt;systemd-fstab-generator (WHY, JUST WHY. &lt;code&gt;genfstab&lt;/code&gt; exists.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;all of these systemd modules shouldn&amp;rsquo;t be a part of the init system, but they somehow are&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Aside from systemd&amp;rsquo;s disregard of the UNIX philosophy, it boots significantly slower than for example runit or s6 (at least on all of my machines).
+It is really a beast, a performance hog and it simply just does too much. PID 1 should just start some services with dependency management and that&amp;rsquo;s it.
+Another big thing that i hate is &lt;strong&gt;pulseaudio&lt;/strong&gt;, even if it is being currently replaced by pipewire (and that&amp;rsquo;s really good) - it is a wonky mess that never works,
+uses too much system resources, isn&amp;rsquo;t system-wide, has horrible command-line interfaces and is just simply buggy.
+We should stick to alsa in the long-term. Why?
+It simply just works, yes - only after extensive configuration to let it work on modern browsers, add multi-channel support etc. - but it works.&lt;/p&gt;
+&lt;p&gt;The mentality of &lt;em&gt;Lennart Poettering&amp;rsquo;s&lt;/em&gt; software is spreading too.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-freedom-anyway&#34;&gt;What is Freedom anyway?&lt;/h2&gt;
+&lt;p&gt;Freedom in linux is decaying.
+Most people are forced to use pulseaudio (because of steam and other stuff), X.Org (wayland exists, but it isn&amp;rsquo;t as stable), systemd (because gnome) and other things.
+In the early days of linux there really was more choice than now.
+In the 90s and early 2000s, when UNIX systems came to your average Joe, people used BSDs, Linuxes, BeOS etc.
+Now it&amp;rsquo;s just ubuntu and arch.&lt;/p&gt;
+&lt;p&gt;People started realizing this and now some are moving to BSD or - if someone doesn&amp;rsquo;t care about privacy - MacOS.
+I suspect that in a few years most popular linux distros will be closer to windows than to any free-software UNIX imaginable.
+But let&amp;rsquo;s end this for now.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Linux users wanting it to be more &amp;ldquo;user-friendly&amp;rdquo; killed linux. Yes, it is more integrated - but at what cost?
+GNOME 3 and systemd are the greatest examples of this trend.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Piracy is 80% morally correct</title>
+		<link>https://zesrajsie.tk/piracy/</link>
+		<pubDate>Thu, 06 Oct 2022 21:51:54 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/piracy/</guid>
+		<description>&lt;p&gt;&lt;em&gt;&amp;ldquo;this will be a controversial one&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-piracy-stealing&#34;&gt;Is Piracy Stealing?&lt;/h2&gt;
+&lt;p&gt;No, not at all.
+Unlike real piracy (a group of guys goes into a boat in the middle of the fucking ocean and steals everything) nothing just ceases to exist.
+So technically it is just unauthorized file copying, which sounds stupid because everyone can copy files on their disk in any capacity.&lt;/p&gt;
+&lt;p&gt;Even then, let&amp;rsquo;s be honest.
+Stealing (like real stealing) from big corporations doesn&amp;rsquo;t hurt them much + nobody cares about them (outside of the apple community where apple inc. is their lord and savior).&lt;/p&gt;
+&lt;h2 id=&#34;what-about-that-20&#34;&gt;What about that 20%?&lt;/h2&gt;
+&lt;p&gt;That 20% is mostly stuff that is already illegal, or it&amp;rsquo;s just immoral anyways.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Porn (don&amp;rsquo;t coom kids.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Child Po- Cheese Pizza&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Why would you download this, yes downloading this stuff from torrent with a VPN is safe (kind of) but why?)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some indie games made by a guy in his basement worth for five bucks (not talking about AAA&amp;rsquo;s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Like these people actually want to make something good, support them. But still &amp;ldquo;no tux, no bux&amp;rdquo; is a rule that i&amp;rsquo;ll follow.)&lt;/p&gt;
+&lt;h2 id=&#34;the-bittorrent-protocol-itself&#34;&gt;The BitTorrent protocol itself&lt;/h2&gt;
+&lt;p&gt;I like torrents mostly because the BitTorrent protocol revolutionized the Internet.
+It was created when your average internet connection was around 50 KB/s, and most people still used dial-up.
+But why it was so revolutional?&lt;/p&gt;
+&lt;p&gt;First, it is very hard to shut down a torrent network - that&amp;rsquo;s why it is so commonly used for piracy and rare / lost media archival.
+Back in the day most websites were owned by people, not companies. A side effect of this was that servers of a website could be shut down at any time due to many reasons. The creator of that site could be bored, forgot to turn on his server etc.
+Obviously, when the servers are down, you cannot download stuff from this person. BitTorrent is decentralized, so everyone having the file on his own computer is a potential server. Only one person online (more popular torrents have even 50 people at the same time) can keep the torrent up and send the data to you.
+Because of this decentralization, most companies can&amp;rsquo;t stop even a single torrent.&lt;/p&gt;
+&lt;p&gt;Aside from that, download speeds of the files sent through torrent weren&amp;rsquo;t capped by the server, so these files could be downloaded with very high speeds.
+These reasons are all i need to prefer torrent over anything else.&lt;/p&gt;
+&lt;h2 id=&#34;how-2-interwebz-pirate&#34;&gt;how 2 interwebz pirate&lt;/h2&gt;
+&lt;p&gt;First, you need to know what is a torrent tracker.
+A torrent tracker is a server that - as the name suggests - tracks peers across many torrent networks. Most of these trackers are aggregated and hosted on sites like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;thepiratebay.org&lt;/li&gt;
+&lt;li&gt;1337x.to&lt;/li&gt;
+&lt;li&gt;rutracker.org (it&amp;rsquo;s in russian, some basic language skills required to use it on a daily basis)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;these are sites that i prefer to use.&lt;/p&gt;
+&lt;p&gt;How to download files from them? It&amp;rsquo;s easy.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;go to the website (example is from thepiratebay.org)&lt;/li&gt;
+&lt;li&gt;search what you want&lt;/li&gt;
+&lt;li&gt;click on it (and avoid ads when possible)&lt;/li&gt;
+&lt;li&gt;click on the button with da magnet&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;your client should appear and set up the torrent for you by now.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;relax and wait till the thing completes.&lt;/li&gt;
+&lt;li&gt;now you have your favourite music album, hentai game, or something else on your hard drive!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;ending&#34;&gt;Ending&lt;/h2&gt;
+&lt;p&gt;So that was it, i hope this guide to torrents was useful.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Music</title>
+		<link>https://zesrajsie.tk/music/</link>
+		<pubDate>Thu, 22 Sep 2022 23:06:35 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/music/</guid>
+		<description>&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/music.css&#34;&gt;
+&lt;div class=&#34;grid&#34;&gt;
+
+        	&lt;div class=&#34;ibm_cp&#34;&gt;
+				
+			&lt;p&gt;ibm_cp (2021)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/ibmcp_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://anonfiles.com/j4WaV6Pdub/ibm_cp_zip&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;&lt;div class=&#34;m4kulaturamusic&#34;&gt;
+		
+			&lt;p&gt;imagine fucking existing (2022)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/imagine_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://anonfiles.com/B9efW7Pcud/m4kulaturamusic_zip&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;&lt;div class=&#34;tracking&#34;&gt;
+		
+			&lt;p&gt;Tracking Devices (2021)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/trackingdevices_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/dG4TiaDK#OmE7ubjoY_R1O7QZY7FDNh9E7aY9XHSc6ohTeSd3qDM&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;&lt;div class=&#34;house&#34;&gt;
+		
+			&lt;p&gt;Chastity House (2022)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/chastityhouse_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/NXIzBSpQ#Bi1xgvVaHVjRpLa-4ULB5h_0ip0m6Pwx22AMyigjYJY&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+	</item>
+	
+	<item>
+		<title>Reserve</title>
+		<link>https://zesrajsie.tk/reserve/</link>
+		<pubDate>Thu, 22 Sep 2022 22:14:13 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/reserve/</guid>
+		<description>&lt;h1 id=&#34;what-the-fuck-is-it&#34;&gt;What the fuck is it?&lt;/h1&gt;
+&lt;p&gt;m4kulatura&amp;rsquo;s private reserve (MPR) is a repository full of software, games, music and other stuff.
+it is submitted by m4kulatura and his friends mostly for personal use and archival.
+still, anyone with an internet connection can download files from the repo.&lt;/p&gt;
+&lt;h1 id=&#34;download-as-much-as-you-want&#34;&gt;download as much as you want!&lt;/h1&gt;
+&lt;p&gt;http server: &lt;a href=&#34;https://ftp.whentheh.tk&#34;&gt;https://ftp.whentheh.tk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(currently inactive due to maintenance)&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Wikitest</title>
+		<link>https://zesrajsie.tk/wikitest/</link>
+		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wikitest/</guid>
+		<description>&lt;p&gt;esse mam z cb&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About</title>
+		<link>https://zesrajsie.tk/about/</link>
+		<pubDate>Thu, 22 Sep 2022 21:54:15 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/about/</guid>
+		<description>&lt;p&gt;Hi, i’m m4kulatura, your favourite dumbass and linux user from the hood. I usually do music and programming (mostly for UNIX systems).&lt;/p&gt;
+&lt;h1 id=&#34;what-do-i-use&#34;&gt;What Do I Use?&lt;/h1&gt;
+&lt;p&gt;OS: Void GNU/Linux 64-bit&lt;/p&gt;
+&lt;p&gt;Desktop: GNOME 42&lt;/p&gt;
+&lt;p&gt;Web Browser: firefox&lt;/p&gt;
+&lt;p&gt;Image Editor: GIMP + Krita&lt;/p&gt;
+&lt;p&gt;Video Editor: Blender&lt;/p&gt;
+&lt;p&gt;3D art / 2D art / VFX: Blender&lt;/p&gt;
+&lt;p&gt;Music Stuff: Mostly MOD trackers + Ardour / Bitwig Studio&lt;/p&gt;
+&lt;p&gt;Text / Code editor: Vim&lt;/p&gt;
+&lt;h1 id=&#34;hardware&#34;&gt;Hardware:&lt;/h1&gt;
+&lt;p&gt;Cellphone: Xiaomi Mi 10T Lite 5G&lt;/p&gt;
+&lt;p&gt;Media Player: Astell&amp;amp;Kern AK70 MKII&lt;/p&gt;
+&lt;p&gt;Laptop: Thinkpad x230&lt;/p&gt;
+&lt;p&gt;Headphones: AKG K712&lt;/p&gt;
+&lt;p&gt;Microphone: Crono Studio 101&lt;/p&gt;
+&lt;p&gt;Keyboard: SPC Gear GK630&lt;/p&gt;
+&lt;p&gt;Mouse: Glorious Model O + Razer Diamondback (original from 2005)&lt;/p&gt;
+&lt;h1 id=&#34;pc-specs&#34;&gt;PC specs:&lt;/h1&gt;
+&lt;p&gt;CPU: AMD Ryzen 5 3600&lt;/p&gt;
+&lt;p&gt;GPU: AMD Radeon 6600 XT&lt;/p&gt;
+&lt;p&gt;RAM: 16GB DDR4 3200MHz&lt;/p&gt;
+&lt;p&gt;HDD / SSD: 500gb SSD; 500gb HDD; 2TB HDD;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>M4kulatura wiki</title>
+		<link>https://zesrajsie.tk/wiki/</link>
+		<pubDate>Thu, 22 Sep 2022 21:51:55 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wiki/</guid>
+		<description>&lt;p&gt;This is the m4kulatura lore wiki, sadly it hasn&amp;rsquo;t been updated in a while.
+Fortunately i&amp;rsquo;m currently working on it!
+Feel free to explore.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wikitest/&#34;&gt;Wikitest&lt;/a&gt;&lt;/li&gt;
+
+</description>
+	</item>
+	
+	</channel>
+</rss>

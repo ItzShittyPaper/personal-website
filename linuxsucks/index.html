@@ -1,0 +1,114 @@
+<link rel="stylesheet" type="text/css" href="/css/nav.css">
+<div class="nigger">
+  <nav id="nav" class="nav justify-content-center">
+
+	  <a href="/index.html">Home</a> 
+	  &bull;
+	  <a href="/wiki/">M4kulatura Wiki</a> 
+	  &bull;
+	  <a href="/music/">Music</a> 
+	  &bull;
+	  <a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
+	  &bull;
+	  <a href="/reserve/">Reserve</a> 
+	  &bull;
+    	  <a href="/about/">About Me</a>
+
+  </nav>
+</div>
+<link rel="stylesheet" type="text/css" href="/blog.css">
+<header><h1>Linux is dead (and we killed it)</h1></header>
+<article>
+<p>Look, it&rsquo;s just my opinion. But Linux is truly dead.
+It has become unstable, bloated and unusable. Even Windows beats most popular distros in that regard.</p>
+<p>Even &ldquo;pro&rdquo; distributions like Arch or Gentoo suffer from most of the problems that modern UNIX has.
+An example that i like to use is NetworkManager, a truly useless piece of software.
+This deamon really is just a workaround that makes systemd&rsquo;s network system usable to your average Joe.</p>
+<p>Other init-systems like openrc and runit just work.
+Yes - they require a dhcp service (if you even use dhcp) - but even then these init systems ship with at least working network setup tools.</p>
+<p>But let&rsquo;s analyze the downfall of Linux in detail</p>
+<h2 id="the-desktop">The Desktop</h2>
+<p>For me it all started with GNOME 3.
+I know I sound stupid because everyone bullies GNOME and systemd, but hear me out.</p>
+<p>GNOME 2 was perfect.
+Ok, maybe not. Still it was really close to perfection. Why?
+It was easy to use, stable and customizable - everything you want from a desktop.</p>
+<p>But then, from nowhere - gnome 3 appeared.
+They have scrapped everything they built since the 90s and started from scratch.
+And it wasn&rsquo;t a success, actually, it was the Windows Vista of linux.</p>
+<p>If someone came to my house with a gun and said &ldquo;describe what gnome 3 in 2011 was in 5 seconds or i&rsquo;ll shoot you&rdquo; i would say that it was janky, very janky.
+I didn&rsquo;t understand why the dev-team did this, and i don&rsquo;t understand it now.
+After some time the GNOME team fixed their desktop, and it was actually pretty easy to use.
+Most popular distributions like ubuntu returned to their roots with shipping gnome again.
+But while all of this was happening, gnome 3 was the literal definition of a &ldquo;dumpster fire&rdquo; under the hood.
+Through time the team added too many unneceseary features to gnome and added systemd dependencies.
+Because of the popularity of systemd, no one saw this as a problem. But it really is.
+Now with GNOME 42 using 2 gigs idling i can confortably say that it won&rsquo;t ever go back to it&rsquo;s days of glory.</p>
+<p>KDE had gone a simillar route, but with a happier ending overall.
+KDE 3 was the best alternative to GNOME 2, and the most customizable desktop of it&rsquo;s time.
+In 2008 / 2009 KDE 4 was released. And you guessed it - it was a total disaster.
+Everybody hated this thing, it was barely usable. At least GNOME 3 didn&rsquo;t crashed almost every time you wanted to change a theme.
+The succesor to KDE 4, Plasma is actually very successful to this day. It mostly reclaimed the desktop throne from KDE 3 / Trinity, and it is the favourite to this day.
+But it didn&rsquo;t protect KDE from it&rsquo;s jank.</p>
+<h3 id="kde-plasma-jank-list">KDE Plasma jank list</h3>
+<ol>
+<li>a ton of confusing menus</li>
+<li>QT5 is still a mess</li>
+<li>Uses even more ram than GNOME</li>
+<li>Outdated widgets</li>
+<li>Feature Creep</li>
+<li>Weird Design Choices</li>
+<li>A shitty store app</li>
+<li>Broken, unfinished app suite</li>
+<li>Breeze theme is the only one that is actually usable and integrates with GTK</li>
+<li>Unpolished, buggy animations</li>
+<li>Bugs</li>
+<li>Bugs!</li>
+<li>Even More Bugs!</li>
+</ol>
+<p>Ok, let&rsquo;s end it here.</p>
+<h2 id="systemd">systemd</h2>
+<p>From the other side of our linux coin is <strong>systemd</strong>, a linux init system that creeped into every distro since Debian 7 codenamed &ldquo;Jessie&rdquo;
+Most people just don&rsquo;t care enough about linux&rsquo;s internal workings to hate systemd - it is still a usable and easy to use init system.
+I know that it&rsquo;s a meme, but systemd really is the most bloated PID1 that ever existed, having a ton of useless services that shouldn&rsquo;t even be there.</p>
+<h3 id="the-not-so-comprehensive-list-of-useless-soystemd-wonk-and-jank">The not-so comprehensive list of useless soystemd wonk and jank</h3>
+<ol>
+<li>systemd-homed</li>
+<li>systemd-logind</li>
+<li>systemd-boot</li>
+<li>systemd/Journal (yes, there are multiple naming conventions used there)</li>
+<li>systemd-sysusers</li>
+<li>systemd-nspawn</li>
+<li>systemd-stub</li>
+<li>systemd.mount (another naming convention)</li>
+<li>systemd-fstab-generator (WHY, JUST WHY. <code>genfstab</code> exists.)</li>
+</ol>
+<blockquote>
+<p>all of these systemd modules shouldn&rsquo;t be a part of the init system, but they somehow are&hellip;</p>
+</blockquote>
+<p>Aside from systemd&rsquo;s disregard of the UNIX philosophy, it boots significantly slower than for example runit or s6 (at least on all of my machines).
+It is really a beast, a performance hog and it simply just does too much. PID 1 should just start some services with dependency management and that&rsquo;s it.
+Another big thing that i hate is <strong>pulseaudio</strong>, even if it is being currently replaced by pipewire (and that&rsquo;s really good) - it is a wonky mess that never works,
+uses too much system resources, isn&rsquo;t system-wide, has horrible command-line interfaces and is just simply buggy.
+We should stick to alsa in the long-term. Why?
+It simply just works, yes - only after extensive configuration to let it work on modern browsers, add multi-channel support etc. - but it works.</p>
+<p>The mentality of <em>Lennart Poettering&rsquo;s</em> software is spreading too.</p>
+<h2 id="what-is-freedom-anyway">What is Freedom anyway?</h2>
+<p>Freedom in linux is decaying.
+Most people are forced to use pulseaudio (because of steam and other stuff), X.Org (wayland exists, but it isn&rsquo;t as stable), systemd (because gnome) and other things.
+In the early days of linux there really was more choice than now.
+In the 90s and early 2000s, when UNIX systems came to your average Joe, people used BSDs, Linuxes, BeOS etc.
+Now it&rsquo;s just ubuntu and arch.</p>
+<p>People started realizing this and now some are moving to BSD or - if someone doesn&rsquo;t care about privacy - MacOS.
+I suspect that in a few years most popular linux distros will be closer to windows than to any free-software UNIX imaginable.
+But let&rsquo;s end this for now.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Linux users wanting it to be more &ldquo;user-friendly&rdquo; killed linux. Yes, it is more integrated - but at what cost?
+GNOME 3 and systemd are the greatest examples of this trend.</p>
+<br>
+<br>
+<br>
+<a>copyright lololol</a>
+<br>
+<a>made by m4kulatura</a>
+
