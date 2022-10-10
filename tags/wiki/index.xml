@@ -11,6 +11,75 @@
 	
 	
 	<item>
+		<title>Linux gets Rusty: My Response</title>
+		<link>https://zesrajsie.tk/linuxrust/</link>
+		<pubDate>Mon, 10 Oct 2022 20:55:32 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/linuxrust/</guid>
+		<description>&lt;p&gt;all i can say is: Why?&lt;/p&gt;
+&lt;h1 id=&#34;oxidization&#34;&gt;Oxidization&lt;/h1&gt;
+&lt;p&gt;first, we need to look at the bigger picture.&lt;/p&gt;
+&lt;p&gt;Rust is a new multi-paradigm programming language now commonly used for desktop applications and utilities.
+It&amp;rsquo;s biggest &amp;ldquo;pros&amp;rdquo; are efficiency and memory safety.
+For context i will just add that Rust is popular among the software development community.
+Especially the more &amp;ldquo;Leftist&amp;rdquo; side of it.&lt;/p&gt;
+&lt;p&gt;Linux is implementing Rust simply because there aren&amp;rsquo;t as many C developers as one would think.
+Most senior developers working on low-level code are now retired - or dead.
+Every year people are stepping down from the kernel and moving on with their lives.
+Basically - C is a dead language that zoomers are too afraid to learn, and the supply of people programming in it is quickly depleting.&lt;/p&gt;
+&lt;h1 id=&#34;blahaj-programmer-socks-and-rust&#34;&gt;Blahaj, Programmer Socks, and Rust&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s debunk Rust into oblivion, shall we?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Efficiency
+Rust is more efficient than its biggest competitor, C++ - at least in most cases.
+It&amp;rsquo;s mostly because unlike C++ it doesn&amp;rsquo;t have garbage collection.
+Instead it uses the concepts of &lt;em&gt;ownership&lt;/em&gt; and &lt;em&gt;borrowing&lt;/em&gt;.
+Ownership basically is a system in which memory is automatically freed when a variable is not needed.
+This generally saves memory space, but increases CPU usage and can lead to some other problems.
+In C, developer does this manually with the &lt;code&gt;free()&lt;/code&gt; function. Even if this is not needed in most cases.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Basically, C is much faster, and modern C compilers can compile memory leak-less code without much trouble.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Memory Safety
+Rust fanboys think that it&amp;rsquo;s 100% memory safe. And it&amp;rsquo;s a lie.
+Rust in no way guarantees memory safety.
+The only difference between &amp;ldquo;unsafe&amp;rdquo; languages like C and rust, is that the Rust compiler flags unsafe code as errors that you need to correct.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;bonus-meme-debunk&#34;&gt;BONUS Meme debunk:&lt;/h2&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;eVeRyThInG iS gOiNg To Be ReWrItTeN iN rUsT!!1!
+Rust isn&amp;rsquo;t nearly as universal as most femboys on hacker news think.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C++ iS dEd!!!!
+nah, people will still use C++ because of legacy compatibility and a ton C / C++ libraries that will never be usable with other languages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Yeah. That&amp;rsquo;s it.&lt;/p&gt;
+&lt;h1 id=&#34;the-kernel-of-c&#34;&gt;The &lt;em&gt;kernel&lt;/em&gt; of C&lt;/h1&gt;
+&lt;p&gt;Still, &lt;strong&gt;EXPERIMENTAL&lt;/strong&gt; Rust support is being added to the upcoming linux 6.1 release.
+Most distributions will include Rust maybe in a year or two.&lt;/p&gt;
+&lt;p&gt;Some of them will probably disable Rust support for some time after the 6.1 release, as it is currently optional.&lt;/p&gt;
+&lt;h1 id=&#34;if-it-moves-compile-it&#34;&gt;If It Moves, Compile It&lt;/h1&gt;
+&lt;p&gt;My biggest critic of Rust in the kernel is the time it takes to compile.
+Another language in the build toolchain will basically make the kernel twice as heavy to run and build.&lt;/p&gt;
+&lt;p&gt;Linux was historically a very lightweight kernel, despite of it&amp;rsquo;s monolithic nature.
+Now it is becoming more and more bloated.&lt;/p&gt;
+&lt;p&gt;I mentioned this in my previous blog post, but corporate sponsors are one of the main reasons things like Rust get included in the kernel.
+In a few years many people with low-end hardware will probably need to change their setup because of this change (and many others).&lt;/p&gt;
+&lt;p&gt;Basically, sticking to facts: soon compiling the kernel will take around 8 hours on mid-range hardware. imagine using gentoo with these compile times!&lt;/p&gt;
+&lt;h1 id=&#34;but-should-you&#34;&gt;But Should You?&lt;/h1&gt;
+&lt;p&gt;My conclusion:&lt;/p&gt;
+&lt;p&gt;for now i&amp;rsquo;ll try use linux even with all of this.
+but in the future? i will probably switch to BSD.
+even without some games, i should be fine with the linux binary compatibility.
+idk.&lt;/p&gt;
+&lt;p&gt;goodbye.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Datadesk: What is it?</title>
 		<link>https://zesrajsie.tk/datadesk/</link>
 		<pubDate>Thu, 06 Oct 2022 22:03:49 +0200</pubDate>
