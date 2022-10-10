@@ -30,32 +30,30 @@ Basically - C is a dead language that zoomers are too afraid to learn, and the s
 &lt;h1 id=&#34;blahaj-programmer-socks-and-rust&#34;&gt;Blahaj, Programmer Socks, and Rust&lt;/h1&gt;
 &lt;p&gt;Let&amp;rsquo;s debunk Rust into oblivion, shall we?&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Efficiency
-Rust is more efficient than its biggest competitor, C++ - at least in most cases.
+&lt;li&gt;Efficiency&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rust is more efficient than its biggest competitor, C++ - at least in most cases.
 It&amp;rsquo;s mostly because unlike C++ it doesn&amp;rsquo;t have garbage collection.
 Instead it uses the concepts of &lt;em&gt;ownership&lt;/em&gt; and &lt;em&gt;borrowing&lt;/em&gt;.
 Ownership basically is a system in which memory is automatically freed when a variable is not needed.
 This generally saves memory space, but increases CPU usage and can lead to some other problems.
-In C, developer does this manually with the &lt;code&gt;free()&lt;/code&gt; function. Even if this is not needed in most cases.&lt;/li&gt;
-&lt;/ol&gt;
+In C, developer does this manually with the &lt;code&gt;free()&lt;/code&gt; function. Even if this is not needed in most cases.&lt;/p&gt;
 &lt;p&gt;Basically, C is much faster, and modern C compilers can compile memory leak-less code without much trouble.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Memory Safety
-Rust fanboys think that it&amp;rsquo;s 100% memory safe. And it&amp;rsquo;s a lie.
-Rust in no way guarantees memory safety.
-The only difference between &amp;ldquo;unsafe&amp;rdquo; languages like C and rust, is that the Rust compiler flags unsafe code as errors that you need to correct.&lt;/li&gt;
+&lt;li&gt;Memory Safety&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Rust fanboys think that it&amp;rsquo;s 100% memory safe. And it&amp;rsquo;s a lie.
+Rust in no way guarantees memory safety.
+The only difference between &amp;ldquo;unsafe&amp;rdquo; languages like C and rust, is that the Rust compiler flags unsafe code as errors that you need to correct.&lt;/p&gt;
 &lt;h2 id=&#34;bonus-meme-debunk&#34;&gt;BONUS Meme debunk:&lt;/h2&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;eVeRyThInG iS gOiNg To Be ReWrItTeN iN rUsT!!1!
-Rust isn&amp;rsquo;t nearly as universal as most femboys on hacker news think.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;C++ iS dEd!!!!
-nah, people will still use C++ because of legacy compatibility and a ton C / C++ libraries that will never be usable with other languages.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;eVeRyThInG iS gOiNg To Be ReWrItTeN iN rUsT!!1!&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Rust isn&amp;rsquo;t nearly as universal as most femboys on hacker news think.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;C++ iS dEd!!!!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;nah, people will still use C++ because of legacy compatibility and a ton C / C++ libraries that will never be usable with other languages.&lt;/p&gt;
 &lt;p&gt;Yeah. That&amp;rsquo;s it.&lt;/p&gt;
 &lt;h1 id=&#34;the-kernel-of-c&#34;&gt;The &lt;em&gt;kernel&lt;/em&gt; of C&lt;/h1&gt;
 &lt;p&gt;Still, &lt;strong&gt;EXPERIMENTAL&lt;/strong&gt; Rust support is being added to the upcoming linux 6.1 release.
