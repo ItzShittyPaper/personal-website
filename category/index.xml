@@ -5,10 +5,150 @@
 	<description>Recent content in Category on zesrajsie.tk</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Mon, 10 Oct 2022 20:55:32 +0200</lastBuildDate>
+	<lastBuildDate>Wed, 19 Oct 2022 21:47:40 +0200</lastBuildDate>
     
         <atom:link href="https://zesrajsie.tk/category/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>You DON&#39;T NEED a good PC</title>
+		<link>https://zesrajsie.tk/goodpc/</link>
+		<pubDate>Wed, 19 Oct 2022 21:47:40 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/goodpc/</guid>
+		<description>&lt;p&gt;here&amp;rsquo;s a simple way to have more money. for free!&lt;/p&gt;
+&lt;h1 id=&#34;what-do-you-need&#34;&gt;What do you need?&lt;/h1&gt;
+&lt;p&gt;First, we need to specify how we use computers.
+Here are some of the more performance-heavy things that people use PCs for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Audio / Video / Image Editing&lt;/li&gt;
+&lt;li&gt;Gaming&lt;/li&gt;
+&lt;li&gt;Web Browsing&lt;/li&gt;
+&lt;li&gt;Text Editing / Programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You probably could do all of these things on a 400$ box.
+But how?&lt;/p&gt;
+&lt;h1 id=&#34;lower-you-expectations&#34;&gt;Lower you expectations.&lt;/h1&gt;
+&lt;p&gt;Yes, really.
+The most important thing is to lower your expectations and stop fearing change.
+You need to basically realize that you don&amp;rsquo;t need to play -  i don&amp;rsquo;t know, Soyberpunk 2077 with raytracing.&lt;/p&gt;
+&lt;p&gt;But don&amp;rsquo;t fear, it is almost always the programmers fault!&lt;/p&gt;
+&lt;p&gt;For example, let&amp;rsquo;s take Minecraft.
+The OG edition of the game is written in java.
+Because it was written in java in 2009, the game code runs mostly single-threaded and isn&amp;rsquo;t optimized.
+When microsoft decided to make an UWP version of minecraft for windows 10, the xbox and mobile devices - they decided to rewrite the engine in C++.
+The results are that in the java version of the game, the max. world render distance is 64 (with optimization mods!).
+In the C++ version it&amp;rsquo;s the default.&lt;/p&gt;
+&lt;p&gt;Still, it&amp;rsquo;s a small issue compared to&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;muh-heckin-web-browsers11&#34;&gt;mUh HeCkIn WeB bRoWsErS1!1!!&lt;/h1&gt;
+&lt;p&gt;I think it is safe to say it: the web is beyond repair.
+The sites are bloated, the browsers are bloated, the languages are bloated.
+EVERYTHING. IS. BLOATED.&lt;/p&gt;
+&lt;p&gt;I genuinely think that without a decent PC you can&amp;rsquo;t browse the internet comfortably.
+For example, Firefox starts up on my PC (it&amp;rsquo;s pretty beefy, even if the OS is installed on an HDD) in around 5 - 10 seconds.
+In comparison - starting up Firefox on my Thinkpad x230 takes 30 seconds.
+The worst thing is that there aren&amp;rsquo;t any browsers that are really faster and have good website support, and chromium has the same issues.&lt;/p&gt;
+&lt;p&gt;(yes, i know that surf exists, dont @ me)&lt;/p&gt;
+&lt;p&gt;Even if web browsers were more optimized, they would still have high system requirements due to the web technologies themselves.
+Websites really shouldn&amp;rsquo;t compile 25 megabytes of javascript.
+If your site requires javascript to function - it probably shouldn&amp;rsquo;t be a website.
+Web developers should focus more on stripping down the javascript, not on making the site unusable.&lt;/p&gt;
+&lt;h1 id=&#34;so-how-to-actually-have-a-better-pc-for-free&#34;&gt;So how to actually have a better PC for free&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Install linux&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Yes, it is required, and you won&amp;rsquo;t escape from it.
+You can play almost every game on linux already (from my experience), so there aren&amp;rsquo;t any reasons to not jump ship.
+Windows always was the most bloated OS on the market, and it&amp;rsquo;s mere existence is constantly pushing hardware manufacturers to release overpriced, power-hungry CPU&amp;rsquo;s and GPU&amp;rsquo;s.
+As for my recommendation - if you want a huge performance boost, just install linux. I would suggest Linux Mint MATE edition.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;(OPTIONAL) Install BSD&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;if you got the balls to do it. do it.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Optimize your OS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;on windows you really can&amp;rsquo;t truly optimize your system, so i&amp;rsquo;ll just explain what to do on UNIX-based systems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install a more lightweight graphical environment.
+For example if you use KDE, install XFCE. If you use XFCE, install a tiling window manager etc.
+Configuring a tiling WM can be hard, but it will always be way faster than GNOME / KDE.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;if you don&amp;rsquo;t mind wayland you could even use (for gaming) the gamescope compositor made by valve for the steam deck.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove unnecessary services running in the background
+Get rid of plymouth, sshd and other stuff you don&amp;rsquo;t need, you could theoretically not use a display manager and instead use cli login with .bashrc xorg autostart.
+It will basically save you ram, and maybe even CPU usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Stop running other aplications while gaming.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It will greatly increase availible RAM.
+Needed for 4GB (or less) ram systems.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Lower your resolution in games (if you can)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AMD&amp;rsquo;s FSR works on linux without any problems (you can enable it via lutris or in gamescope). if you have a 1920x1080 screen you could just upscale from 1280x720 or 1600x900.
+It will increase performance with little loss of visual quality.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Don&amp;rsquo;t enable the FPS counter&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;rsquo;s a little psychological trick.
+Just stop caring about the FPS and find the settings that you could play on, without setting the barrier to 60 fps or 30.
+Most people could probably play comfortably in 48 fps, and in some games even 24 fps without even knowing it.&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;(OPTIONAL) Sell your PC and buy &amp;ldquo;a better one&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It sounds stupid, but with experience you could buy some way better parts for the same price.
+You could basically in a few weeks get a 20 - 50% performance boost just by picking your PC parts better.
+Also you can just add a couple of bucks to your budget and buy a objectively better computer with a very small price increase (let&amp;rsquo;s say 20 - 50$).&lt;/p&gt;
+&lt;h1 id=&#34;start-using-software-that-actually-cares-about-performance&#34;&gt;Start using software that actually cares about performance.&lt;/h1&gt;
+&lt;p&gt;There is a ton of FOSS software that runs a lot better than all of it&amp;rsquo;s proprietary counterparts.
+You&amp;rsquo;d be suprised that you could edit videos, do VFX, produce music and code comfortably on a 250$ box.&lt;/p&gt;
+&lt;p&gt;Here are some examples of such software.&lt;/p&gt;
+&lt;p&gt;3D / VFX software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blender&lt;/li&gt;
+&lt;li&gt;Natron&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Video Editors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blender&lt;/li&gt;
+&lt;li&gt;Kdenlive&lt;/li&gt;
+&lt;li&gt;Olive&lt;/li&gt;
+&lt;li&gt;Shoutcut&lt;/li&gt;
+&lt;li&gt;Handbrake (a media transcoding program)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Music Production software / plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ardour&lt;/li&gt;
+&lt;li&gt;OpenMPT&lt;/li&gt;
+&lt;li&gt;Milkytracker&lt;/li&gt;
+&lt;li&gt;Calf Plugins&lt;/li&gt;
+&lt;li&gt;Linux Studio Plugins&lt;/li&gt;
+&lt;li&gt;Claudia Patchbay&lt;/li&gt;
+&lt;li&gt;Carla Rack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Graphics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GIMP&lt;/li&gt;
+&lt;li&gt;Inkscape (for vector graphics)&lt;/li&gt;
+&lt;li&gt;Krita (for drawing and 2D animation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Programming:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code Blocks&lt;/li&gt;
+&lt;li&gt;VS Codium&lt;/li&gt;
+&lt;li&gt;Vim (dont beat me it&amp;rsquo;s a joke)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think that&amp;rsquo;s it.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;When i built my home server, it had a shit GPU (and 7$ Nvidia NVS 300)
+I found out that even then it had decent performance in games like Half-Life 2 or Xonotic.
+This inspired me to make that article.&lt;/p&gt;
+&lt;p&gt;Use your 10 dollar PCs, install gentoo and have fun getting max performance out from you computers!&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Linux gets Rusty: My Response</title>
@@ -342,6 +482,125 @@ still, anyone with an internet connection can download files from the repo.&lt;/
 	</item>
 	
 	<item>
+		<title>M4kulatura</title>
+		<link>https://zesrajsie.tk/wiki/m4kulatura/</link>
+		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wiki/m4kulatura/</guid>
+		<description>&lt;p&gt;M4kulatura is the main character in the m4kulatura lore.
+Basically the center-piece connecting everything together.
+Working on his webiste and multiple other projects since 2016.
+Oh and he also makes music: &lt;a href=&#34;https://makulaturka.tk/music&#34;&gt;https://makulaturka.tk/music&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;info&#34;&gt;Info:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Class: Boomer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sub-Class: Femboy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Age: 14 (as of now)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sex: Male (sadly)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Orientation (sowwy fow le LGBT speek ;-;): asexual, heteroromantic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Has a boyfriend: nope.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Has a girlfriend: nope. (oficially)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goes to work: nope.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goes to school: yes, he goes to ZSTiE.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;related-to&#34;&gt;Related to:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;blueberry (best friend)&lt;/li&gt;
+&lt;li&gt;DeusVult (2nd best friend)&lt;/li&gt;
+&lt;li&gt;Dynio (coworker / friend)
+tty7derty
+askel
+snybej
+przeróbek
+major
+ballie&lt;/li&gt;
+&lt;li&gt;Kosmitek (classmate)
+Lewan&lt;/li&gt;
+&lt;li&gt;Matteo&lt;/li&gt;
+&lt;li&gt;CartoonGuy (an old friend)&lt;/li&gt;
+&lt;li&gt;Sofeł (&lt;em&gt;it&amp;rsquo;s a long story&lt;/em&gt; / ex (?) )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;M4kulatura is the main maintainer of projects like WarpOS, TMS, MMS, datadesk and others.
+He does it mostly for fun and to let his mind focus on things other than school and work.
+Aside from maintaining these systems he has an average social life and composes music in his spare time.&lt;/p&gt;
+&lt;p&gt;M4kulatura a few years ago started talking to sofeł.
+They were best friends for a few years, knowing everything about eachother and living their lives together.
+Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After some time they broke up, this breakup caused a suicide attempt involving m4kulatura, as well as other issues.&lt;/p&gt;
+&lt;p&gt;M4kulatura also has some controversial, right-wing political opinions.&lt;/p&gt;
+&lt;h2 id=&#34;likes&#34;&gt;Likes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Old Tech&lt;/li&gt;
+&lt;li&gt;Free Software&lt;/li&gt;
+&lt;li&gt;Music&lt;/li&gt;
+&lt;li&gt;Classic Games&lt;/li&gt;
+&lt;li&gt;History&lt;/li&gt;
+&lt;li&gt;Politics&lt;/li&gt;
+&lt;li&gt;Economics&lt;/li&gt;
+&lt;li&gt;Philosophy&lt;/li&gt;
+&lt;li&gt;Low-Level Programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hates&#34;&gt;Hates:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Zoomers&lt;/li&gt;
+&lt;li&gt;TikTok&lt;/li&gt;
+&lt;li&gt;Proprietary Software&lt;/li&gt;
+&lt;li&gt;Microsoft&lt;/li&gt;
+&lt;li&gt;Apple Stans&lt;/li&gt;
+&lt;li&gt;LGBT+ Fandom&lt;/li&gt;
+&lt;li&gt;Furries&lt;/li&gt;
+&lt;li&gt;Anime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;annotations&#34;&gt;Annotations:&lt;/h1&gt;
+&lt;p&gt;none&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>wiki template</title>
+		<link>https://zesrajsie.tk/wiki/template/</link>
+		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wiki/template/</guid>
+		<description>&lt;p&gt;&lt;em&gt;a basic summary&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;info&#34;&gt;Info:&lt;/h1&gt;
+&lt;h1 id=&#34;related-to&#34;&gt;Related to:&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;more detailed info&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;likes&#34;&gt;Likes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hates&#34;&gt;Hates:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;annotations&#34;&gt;Annotations:&lt;/h1&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Wikitest</title>
 		<link>https://zesrajsie.tk/wikitest/</link>
 		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
@@ -384,6 +643,27 @@ still, anyone with an internet connection can download files from the repo.&lt;/
 	</item>
 	
 	<item>
+		<title>Blog</title>
+		<link>https://zesrajsie.tk/blog/</link>
+		<pubDate>Thu, 22 Sep 2022 21:51:55 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/blog/</guid>
+		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-19T21:47:40&amp;#43;02:00&#34;&gt;2022 Oct 19&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/goodpc/&#34;&gt;You DON&amp;#39;T NEED a good PC&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-10T20:55:32&amp;#43;02:00&#34;&gt;2022 Oct 10&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/linuxrust/&#34;&gt;Linux gets Rusty: My Response&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-06T22:03:49&amp;#43;02:00&#34;&gt;2022 Oct 06&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/datadesk/&#34;&gt;Datadesk: What is it?&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-06T21:57:30&amp;#43;02:00&#34;&gt;2022 Oct 06&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/linuxsucks/&#34;&gt;Linux is dead (and we killed it)&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-06T21:51:54&amp;#43;02:00&#34;&gt;2022 Oct 06&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/piracy/&#34;&gt;Piracy is 80% morally correct&lt;/a&gt;&lt;/li&gt;
+
+</description>
+	</item>
+	
+	<item>
 		<title>M4kulatura wiki</title>
 		<link>https://zesrajsie.tk/wiki/</link>
 		<pubDate>Thu, 22 Sep 2022 21:51:55 +0200</pubDate>
@@ -392,6 +672,10 @@ still, anyone with an internet connection can download files from the repo.&lt;/
 		<description>&lt;p&gt;This is the m4kulatura lore wiki, sadly it hasn&amp;rsquo;t been updated in a while.
 Fortunately i&amp;rsquo;m currently working on it!
 Feel free to explore.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wiki/m4kulatura/&#34;&gt;M4kulatura&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wiki/template/&#34;&gt;wiki template&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wikitest/&#34;&gt;Wikitest&lt;/a&gt;&lt;/li&gt;
 
