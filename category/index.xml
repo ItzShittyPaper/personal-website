@@ -5,10 +5,21 @@
 	<description>Recent content in Category on zesrajsie.tk</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Wed, 19 Oct 2022 21:47:40 +0200</lastBuildDate>
+	<lastBuildDate>Fri, 30 Dec 2022 00:10:05 +0100</lastBuildDate>
     
         <atom:link href="https://zesrajsie.tk/category/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>my stuff or smthn: The FemboyOS Logo</title>
+		<link>https://zesrajsie.tk/femboyos/</link>
+		<pubDate>Fri, 30 Dec 2022 00:10:05 +0100</pubDate>
+		
+		<guid>https://zesrajsie.tk/femboyos/</guid>
+		<description>&lt;p&gt;So, i was tasked with designing and making the FembyoOS logo, here it is:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zesrajsie.tk/femboyOS.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>You DON&#39;T NEED a good PC</title>
@@ -423,12 +434,16 @@ A torrent tracker is a server that - as the name suggests - tracks peers across 
 	</item>
 	
 	<item>
-		<title>Music</title>
+		<title>m4kulatura&#39;s music corner :3</title>
 		<link>https://zesrajsie.tk/music/</link>
 		<pubDate>Thu, 22 Sep 2022 23:06:35 +0200</pubDate>
 		
 		<guid>https://zesrajsie.tk/music/</guid>
-		<description>&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/music.css&#34;&gt;
+		<description>&lt;p&gt;yeah, i make music. nothing really interesting.
+started as a small side project, and now it&amp;rsquo;s the main thing i do.
+i used almost everything from FL Studio to MOD Trackers like OpenMPT or the OGs like Impulse Tracker and FastTracker II.
+here, have some of my albums, some sound bad, some sound good:&lt;/p&gt;
+&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/music.css&#34;&gt;
 &lt;div class=&#34;grid&#34;&gt;
 
         	&lt;div class=&#34;ibm_cp&#34;&gt;
@@ -462,7 +477,8 @@ A torrent tracker is a server that - as the name suggests - tracks peers across 
 		&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;all of my tracker modules (more free music !!! )&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;NOTE: ADD SOME SAMPLES HERE SO PEOPLE WOULD LISTEN TO YOUR SHIT&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;all of my tracker modules (at the time of writing this) (more free music !!! )&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://mega.nz/file/JWhyhYTb#R5hu0qFe2qHGO2-njYW-YHgpvR_nM7PH81PPXh8GoQE&#34;&gt;downwoad it uwu&lt;/a&gt;&lt;/p&gt;
 </description>
 	</item>
@@ -651,6 +667,8 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		
 		<guid>https://zesrajsie.tk/blog/</guid>
 		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-12-30T00:10:05&amp;#43;01:00&#34;&gt;2022 Dec 30&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/femboyos/&#34;&gt;my stuff or smthn: The FemboyOS Logo&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2022-10-19T21:47:40&amp;#43;02:00&#34;&gt;2022 Oct 19&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/goodpc/&#34;&gt;You DON&amp;#39;T NEED a good PC&lt;/a&gt;&lt;/li&gt;
 
