@@ -1,0 +1,745 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>zesrajsie.tk</title>
+	<link>https://zesrajsie.tk/tags/meme/</link>
+	<description>Recent content in meme on zesrajsie.tk</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Sun, 05 Mar 2023 09:36:26 +0100</lastBuildDate>
+    
+        <atom:link href="https://zesrajsie.tk/tags/meme/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Sneed&#39;s Feed and Seed</title>
+		<link>https://zesrajsie.tk/sneed/</link>
+		<pubDate>Sun, 05 Mar 2023 09:36:26 +0100</pubDate>
+		
+		<guid>https://zesrajsie.tk/sneed/</guid>
+		<description>&lt;p&gt;&lt;em&gt;Formerly Chuck&amp;rsquo;s&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;btw the site is back up, with some changes and quality of life improvements&lt;/p&gt;
+&lt;h2 id=&#34;what-happened&#34;&gt;What happened?&lt;/h2&gt;
+&lt;p&gt;im planning on releasing a satirical tech news site one day, currently working on it.
+i&amp;rsquo;ll make a post about it in a few weeks
+also im working on a vidya game, and that shit takes a ton of time i guess&lt;/p&gt;
+&lt;p&gt;this place is a huge burden on me really, it&amp;rsquo;s hard to update, the codebase is shit and i don&amp;rsquo;t really have much to say, so there are like 4 posts a year. that means that even IF someone sees this, they&amp;rsquo;ll think that the site is dead and no one works on it anymore. the thing is when i closed it many people online wondered where it went, so i couldn&amp;rsquo;t just leave it like that. so here it is again. have fun!&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>my stuff or smthn: The FemboyOS Logo</title>
+		<link>https://zesrajsie.tk/femboyos/</link>
+		<pubDate>Fri, 30 Dec 2022 00:10:05 +0100</pubDate>
+		
+		<guid>https://zesrajsie.tk/femboyos/</guid>
+		<description>&lt;p&gt;So, i was tasked with designing and making the FembyoOS logo, here it is:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zesrajsie.tk/femboyOS.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>You DON&#39;T NEED a good PC</title>
+		<link>https://zesrajsie.tk/goodpc/</link>
+		<pubDate>Wed, 19 Oct 2022 21:47:40 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/goodpc/</guid>
+		<description>&lt;p&gt;here&amp;rsquo;s a simple way to have more money. for free!&lt;/p&gt;
+&lt;h1 id=&#34;what-do-you-need&#34;&gt;What do you need?&lt;/h1&gt;
+&lt;p&gt;First, we need to specify how we use computers.
+Here are some of the more performance-heavy things that people use PCs for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Audio / Video / Image Editing&lt;/li&gt;
+&lt;li&gt;Gaming&lt;/li&gt;
+&lt;li&gt;Web Browsing&lt;/li&gt;
+&lt;li&gt;Text Editing / Programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You probably could do all of these things on a 400$ box.
+But how?&lt;/p&gt;
+&lt;h1 id=&#34;lower-you-expectations&#34;&gt;Lower you expectations.&lt;/h1&gt;
+&lt;p&gt;Yes, really.
+The most important thing is to lower your expectations and stop fearing change.
+You need to basically realize that you don&amp;rsquo;t need to play -  i don&amp;rsquo;t know, Soyberpunk 2077 with raytracing.&lt;/p&gt;
+&lt;p&gt;But don&amp;rsquo;t fear, it is almost always the programmers fault!&lt;/p&gt;
+&lt;p&gt;For example, let&amp;rsquo;s take Minecraft.
+The OG edition of the game is written in java.
+Because it was written in java in 2009, the game code runs mostly single-threaded and isn&amp;rsquo;t optimized.
+When microsoft decided to make an UWP version of minecraft for windows 10, the xbox and mobile devices - they decided to rewrite the engine in C++.
+The results are that in the java version of the game, the max. world render distance is 64 (with optimization mods!).
+In the C++ version it&amp;rsquo;s the default.&lt;/p&gt;
+&lt;p&gt;Still, it&amp;rsquo;s a small issue compared to&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;muh-heckin-web-browsers11&#34;&gt;mUh HeCkIn WeB bRoWsErS1!1!!&lt;/h1&gt;
+&lt;p&gt;I think it is safe to say it: the web is beyond repair.
+The sites are bloated, the browsers are bloated, the languages are bloated.
+EVERYTHING. IS. BLOATED.&lt;/p&gt;
+&lt;p&gt;I genuinely think that without a decent PC you can&amp;rsquo;t browse the internet comfortably.
+For example, Firefox starts up on my PC (it&amp;rsquo;s pretty beefy, even if the OS is installed on an HDD) in around 5 - 10 seconds.
+In comparison - starting up Firefox on my Thinkpad x230 takes 30 seconds.
+The worst thing is that there aren&amp;rsquo;t any browsers that are really faster and have good website support, and chromium has the same issues.&lt;/p&gt;
+&lt;p&gt;(yes, i know that surf exists, dont @ me)&lt;/p&gt;
+&lt;p&gt;Even if web browsers were more optimized, they would still have high system requirements due to the web technologies themselves.
+Websites really shouldn&amp;rsquo;t compile 25 megabytes of javascript.
+If your site requires javascript to function - it probably shouldn&amp;rsquo;t be a website.
+Web developers should focus more on stripping down the javascript, not on making the site unusable.&lt;/p&gt;
+&lt;h1 id=&#34;so-how-to-actually-have-a-better-pc-for-free&#34;&gt;So how to actually have a better PC for free&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Install linux&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Yes, it is required, and you won&amp;rsquo;t escape from it.
+You can play almost every game on linux already (from my experience), so there aren&amp;rsquo;t any reasons to not jump ship.
+Windows always was the most bloated OS on the market, and it&amp;rsquo;s mere existence is constantly pushing hardware manufacturers to release overpriced, power-hungry CPU&amp;rsquo;s and GPU&amp;rsquo;s.
+As for my recommendation - if you want a huge performance boost, just install linux. I would suggest Linux Mint MATE edition.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;(OPTIONAL) Install BSD&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;if you got the balls to do it. do it.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Optimize your OS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;on windows you really can&amp;rsquo;t truly optimize your system, so i&amp;rsquo;ll just explain what to do on UNIX-based systems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install a more lightweight graphical environment.
+For example if you use KDE, install XFCE. If you use XFCE, install a tiling window manager etc.
+Configuring a tiling WM can be hard, but it will always be way faster than GNOME / KDE.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;if you don&amp;rsquo;t mind wayland you could even use (for gaming) the gamescope compositor made by valve for the steam deck.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove unnecessary services running in the background
+Get rid of plymouth, sshd and other stuff you don&amp;rsquo;t need, you could theoretically not use a display manager and instead use cli login with .bashrc xorg autostart.
+It will basically save you ram, and maybe even CPU usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Stop running other aplications while gaming.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It will greatly increase availible RAM.
+Needed for 4GB (or less) ram systems.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Lower your resolution in games (if you can)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AMD&amp;rsquo;s FSR works on linux without any problems (you can enable it via lutris or in gamescope). if you have a 1920x1080 screen you could just upscale from 1280x720 or 1600x900.
+It will increase performance with little loss of visual quality.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Don&amp;rsquo;t enable the FPS counter&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;rsquo;s a little psychological trick.
+Just stop caring about the FPS and find the settings that you could play on, without setting the barrier to 60 fps or 30.
+Most people could probably play comfortably in 48 fps, and in some games even 24 fps without even knowing it.&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;(OPTIONAL) Sell your PC and buy &amp;ldquo;a better one&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It sounds stupid, but with experience you could buy some way better parts for the same price.
+You could basically in a few weeks get a 20 - 50% performance boost just by picking your PC parts better.
+Also you can just add a couple of bucks to your budget and buy a objectively better computer with a very small price increase (let&amp;rsquo;s say 20 - 50$).&lt;/p&gt;
+&lt;h1 id=&#34;start-using-software-that-actually-cares-about-performance&#34;&gt;Start using software that actually cares about performance.&lt;/h1&gt;
+&lt;p&gt;There is a ton of FOSS software that runs a lot better than all of it&amp;rsquo;s proprietary counterparts.
+You&amp;rsquo;d be suprised that you could edit videos, do VFX, produce music and code comfortably on a 250$ box.&lt;/p&gt;
+&lt;p&gt;Here are some examples of such software.&lt;/p&gt;
+&lt;p&gt;3D / VFX software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blender&lt;/li&gt;
+&lt;li&gt;Natron&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Video Editors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blender&lt;/li&gt;
+&lt;li&gt;Kdenlive&lt;/li&gt;
+&lt;li&gt;Olive&lt;/li&gt;
+&lt;li&gt;Shoutcut&lt;/li&gt;
+&lt;li&gt;Handbrake (a media transcoding program)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Music Production software / plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ardour&lt;/li&gt;
+&lt;li&gt;OpenMPT&lt;/li&gt;
+&lt;li&gt;Milkytracker&lt;/li&gt;
+&lt;li&gt;Calf Plugins&lt;/li&gt;
+&lt;li&gt;Linux Studio Plugins&lt;/li&gt;
+&lt;li&gt;Claudia Patchbay&lt;/li&gt;
+&lt;li&gt;Carla Rack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Graphics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GIMP&lt;/li&gt;
+&lt;li&gt;Inkscape (for vector graphics)&lt;/li&gt;
+&lt;li&gt;Krita (for drawing and 2D animation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Programming:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code Blocks&lt;/li&gt;
+&lt;li&gt;VS Codium&lt;/li&gt;
+&lt;li&gt;Vim (dont beat me it&amp;rsquo;s a joke)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think that&amp;rsquo;s it.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;When i built my home server, it had a shit GPU (and 7$ Nvidia NVS 300)
+I found out that even then it had decent performance in games like Half-Life 2 or Xonotic.
+This inspired me to make that article.&lt;/p&gt;
+&lt;p&gt;Use your 10 dollar PCs, install gentoo and have fun getting max performance out from you computers!&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Linux gets Rusty: My Response</title>
+		<link>https://zesrajsie.tk/linuxrust/</link>
+		<pubDate>Mon, 10 Oct 2022 20:55:32 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/linuxrust/</guid>
+		<description>&lt;p&gt;all i can say is: Why?&lt;/p&gt;
+&lt;h1 id=&#34;oxidization&#34;&gt;Oxidization&lt;/h1&gt;
+&lt;p&gt;first, we need to look at the bigger picture.&lt;/p&gt;
+&lt;p&gt;Rust is a new multi-paradigm programming language now commonly used for desktop applications and utilities.
+It&amp;rsquo;s biggest &amp;ldquo;pros&amp;rdquo; are efficiency and memory safety.
+For context i will just add that Rust is popular among the software development community.
+Especially the more &amp;ldquo;Leftist&amp;rdquo; side of it.&lt;/p&gt;
+&lt;p&gt;Linux is implementing Rust simply because there aren&amp;rsquo;t as many C developers as one would think.
+Most senior developers working on low-level code are now retired - or dead.
+Every year people are stepping down from the kernel and moving on with their lives.
+Basically - C is a dead language that zoomers are too afraid to learn, and the supply of people programming in it is quickly depleting.&lt;/p&gt;
+&lt;h1 id=&#34;blahaj-programmer-socks-and-rust&#34;&gt;Blahaj, Programmer Socks, and Rust&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s debunk Rust into oblivion, shall we?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Efficiency&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rust is more efficient than its biggest competitor, C++ - at least in most cases.
+It&amp;rsquo;s mostly because unlike C++ it doesn&amp;rsquo;t have garbage collection.
+Instead it uses the concepts of &lt;em&gt;ownership&lt;/em&gt; and &lt;em&gt;borrowing&lt;/em&gt;.
+Ownership basically is a system in which memory is automatically freed when a variable is not needed.
+This generally saves memory space, but increases CPU usage and can lead to some other problems.
+In C, developer does this manually with the &lt;code&gt;free()&lt;/code&gt; function. Even if this is not needed in most cases.&lt;/p&gt;
+&lt;p&gt;Basically, C is much faster, and modern C compilers can compile memory leak-less code without much trouble.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Memory Safety&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rust fanboys think that it&amp;rsquo;s 100% memory safe. And it&amp;rsquo;s a lie.
+Rust in no way guarantees memory safety.
+The only difference between &amp;ldquo;unsafe&amp;rdquo; languages like C and rust, is that the Rust compiler flags unsafe code as errors that you need to correct.&lt;/p&gt;
+&lt;h2 id=&#34;bonus-meme-debunk&#34;&gt;BONUS Meme debunk:&lt;/h2&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;eVeRyThInG iS gOiNg To Be ReWrItTeN iN rUsT!!1!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rust isn&amp;rsquo;t nearly as universal as most femboys on hacker news think.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;C++ iS dEd!!!!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;nah, people will still use C++ because of legacy compatibility and a ton C / C++ libraries that will never be usable with other languages.&lt;/p&gt;
+&lt;p&gt;Yeah. That&amp;rsquo;s it.&lt;/p&gt;
+&lt;h1 id=&#34;the-kernel-of-c&#34;&gt;The &lt;em&gt;kernel&lt;/em&gt; of C&lt;/h1&gt;
+&lt;p&gt;Still, &lt;strong&gt;EXPERIMENTAL&lt;/strong&gt; Rust support is being added to the upcoming linux 6.1 release.
+Most distributions will include Rust maybe in a year or two.&lt;/p&gt;
+&lt;p&gt;Some of them will probably disable Rust support for some time after the 6.1 release, as it is currently optional.&lt;/p&gt;
+&lt;h1 id=&#34;if-it-moves-compile-it&#34;&gt;If It Moves, Compile It&lt;/h1&gt;
+&lt;p&gt;My biggest critic of Rust in the kernel is the time it takes to compile.
+Another language in the build toolchain will basically make the kernel twice as heavy to run and build.&lt;/p&gt;
+&lt;p&gt;Linux was historically a very lightweight kernel, despite of it&amp;rsquo;s monolithic nature.
+Now it is becoming more and more bloated.&lt;/p&gt;
+&lt;p&gt;I mentioned this in my previous blog post, but corporate sponsors are one of the main reasons things like Rust get included in the kernel.
+In a few years many people with low-end hardware will probably need to change their setup because of this change (and many others).&lt;/p&gt;
+&lt;p&gt;Basically, sticking to facts: soon compiling the kernel will take around 8 hours on mid-range hardware. imagine using gentoo with these compile times!&lt;/p&gt;
+&lt;h1 id=&#34;but-should-you&#34;&gt;But Should You?&lt;/h1&gt;
+&lt;p&gt;My conclusion:&lt;/p&gt;
+&lt;p&gt;for now i&amp;rsquo;ll try use linux even with all of this.
+but in the future? i will probably switch to BSD.
+even without some games, i should be fine with the linux binary compatibility.
+idk.&lt;/p&gt;
+&lt;p&gt;goodbye.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Datadesk: What is it?</title>
+		<link>https://zesrajsie.tk/datadesk/</link>
+		<pubDate>Thu, 06 Oct 2022 22:03:49 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/datadesk/</guid>
+		<description>&lt;p&gt;The worst document format that exists, and why i made it.&lt;/p&gt;
+&lt;h2 id=&#34;but-tell-me-what-the-fuck-is-it&#34;&gt;But tell me: What the fuck is it?&lt;/h2&gt;
+&lt;p&gt;Datadesk (DS) is an interpreted markup language that bridges the gap between images and text files.
+Characters and sentences are placed by the user on a matrix.&lt;/p&gt;
+&lt;p&gt;DS has 4 main commands:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;/s - writes a sentence to the screen, automatically placing multiple lines until the end of the command (/e).&lt;/li&gt;
+&lt;li&gt;/r - draws a rectangle on the screen.&lt;/li&gt;
+&lt;li&gt;/e - ends the /s command (and every command that has a dynamic argument number).&lt;/li&gt;
+&lt;li&gt;/  - used only once, &amp;ldquo;/&amp;rdquo; means the scene root in a datadesk source file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is also a line numbering argument for /s evoked by the letter &amp;ldquo;L&amp;rdquo; like this: &lt;code&gt;/sL&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The language uses a pass-based syntax in which the return key separates different passes.
+This approach makes writing software with datadesk in mind really easy.
+It works like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1st pass: the y coordinate&lt;/li&gt;
+&lt;li&gt;2nd pass: the x coordinate&lt;/li&gt;
+&lt;li&gt;3rd pass: the command / a character&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the 3rd pass is a command there are arguments after the pass; Technically these are called &amp;ldquo;Optional passes&amp;rdquo;.
+The y coordinate is specified first because ncurses works the same way.
+Even if it feels weird at first, it is really simple in the long run.
+This decision makes sense because people first specify the row (y), and then the column (x).&lt;/p&gt;
+&lt;h2 id=&#34;the-drawer-interpreter&#34;&gt;The DRAWER interpreter.&lt;/h2&gt;
+&lt;p&gt;DRAWER (DRAWER Reference Alpha-stage Working without Errors and it&amp;rsquo;s Robust as fuck) interpreter, is a ncurses based DS interpreter made by me from scratch.
+Currently it only has around 200 lines of code and it&amp;rsquo;s extremely minimal. You can use DRAWER with the following command.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;drawer &amp;lt;path to the ds source file.ds&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The document is shown after the execution of that command, you can close the interpreter with F12.
+&lt;code&gt;drawer -h&lt;/code&gt; shows you the version of drawer and cli arguments that you can use with it.
+&lt;code&gt;drawer -d&lt;/code&gt; shows you a datadesk demo file containing some nice art, graphics etc.&lt;/p&gt;
+&lt;h2 id=&#34;datadesk-the-sequel-what-will-follow-ds1&#34;&gt;Datadesk: The sequel (what will follow DS1?)&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m currently planning on adding support on multiple pages in the same document and adding variables.
+Maybe i will do things such as block quotes and support for slanted and bold text.&lt;/p&gt;
+&lt;p&gt;DS3 will probably have some interactive elements added as well.&lt;/p&gt;
+&lt;h2 id=&#34;what-happened-to-your-previous-project-allcom&#34;&gt;What happened to your previous project, allcom?&lt;/h2&gt;
+&lt;p&gt;I lost motivation and cancelled the game. That&amp;rsquo;s it.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Linux is dead (and we killed it)</title>
+		<link>https://zesrajsie.tk/linuxsucks/</link>
+		<pubDate>Thu, 06 Oct 2022 21:57:30 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/linuxsucks/</guid>
+		<description>&lt;p&gt;Look, it&amp;rsquo;s just my opinion. But Linux is truly dead.
+It has become unstable, bloated and unusable. Even Windows beats most popular distros in that regard.&lt;/p&gt;
+&lt;p&gt;Even &amp;ldquo;pro&amp;rdquo; distributions like Arch or Gentoo suffer from most of the problems that modern UNIX has.
+An example that i like to use is NetworkManager, a truly useless piece of software.
+This deamon really is just a workaround that makes systemd&amp;rsquo;s network system usable to your average Joe.&lt;/p&gt;
+&lt;p&gt;Other init-systems like openrc and runit just work.
+Yes - they require a dhcp service (if you even use dhcp) - but even then these init systems ship with at least working network setup tools.&lt;/p&gt;
+&lt;p&gt;But let&amp;rsquo;s analyze the downfall of Linux in detail&lt;/p&gt;
+&lt;h2 id=&#34;the-desktop&#34;&gt;The Desktop&lt;/h2&gt;
+&lt;p&gt;For me it all started with GNOME 3.
+I know I sound stupid because everyone bullies GNOME and systemd, but hear me out.&lt;/p&gt;
+&lt;p&gt;GNOME 2 was perfect.
+Ok, maybe not. Still it was really close to perfection. Why?
+It was easy to use, stable and customizable - everything you want from a desktop.&lt;/p&gt;
+&lt;p&gt;But then, from nowhere - gnome 3 appeared.
+They have scrapped everything they built since the 90s and started from scratch.
+And it wasn&amp;rsquo;t a success, actually, it was the Windows Vista of linux.&lt;/p&gt;
+&lt;p&gt;If someone came to my house with a gun and said &amp;ldquo;describe what gnome 3 in 2011 was in 5 seconds or i&amp;rsquo;ll shoot you&amp;rdquo; i would say that it was janky, very janky.
+I didn&amp;rsquo;t understand why the dev-team did this, and i don&amp;rsquo;t understand it now.
+After some time the GNOME team fixed their desktop, and it was actually pretty easy to use.
+Most popular distributions like ubuntu returned to their roots with shipping gnome again.
+But while all of this was happening, gnome 3 was the literal definition of a &amp;ldquo;dumpster fire&amp;rdquo; under the hood.
+Through time the team added too many unneceseary features to gnome and added systemd dependencies.
+Because of the popularity of systemd, no one saw this as a problem. But it really is.
+Now with GNOME 42 using 2 gigs idling i can confortably say that it won&amp;rsquo;t ever go back to it&amp;rsquo;s days of glory.&lt;/p&gt;
+&lt;p&gt;KDE had gone a simillar route, but with a happier ending overall.
+KDE 3 was the best alternative to GNOME 2, and the most customizable desktop of it&amp;rsquo;s time.
+In 2008 / 2009 KDE 4 was released. And you guessed it - it was a total disaster.
+Everybody hated this thing, it was barely usable. At least GNOME 3 didn&amp;rsquo;t crashed almost every time you wanted to change a theme.
+The succesor to KDE 4, Plasma is actually very successful to this day. It mostly reclaimed the desktop throne from KDE 3 / Trinity, and it is the favourite to this day.
+But it didn&amp;rsquo;t protect KDE from it&amp;rsquo;s jank.&lt;/p&gt;
+&lt;h3 id=&#34;kde-plasma-jank-list&#34;&gt;KDE Plasma jank list&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;a ton of confusing menus&lt;/li&gt;
+&lt;li&gt;QT5 is still a mess&lt;/li&gt;
+&lt;li&gt;Uses even more ram than GNOME&lt;/li&gt;
+&lt;li&gt;Outdated widgets&lt;/li&gt;
+&lt;li&gt;Feature Creep&lt;/li&gt;
+&lt;li&gt;Weird Design Choices&lt;/li&gt;
+&lt;li&gt;A shitty store app&lt;/li&gt;
+&lt;li&gt;Broken, unfinished app suite&lt;/li&gt;
+&lt;li&gt;Breeze theme is the only one that is actually usable and integrates with GTK&lt;/li&gt;
+&lt;li&gt;Unpolished, buggy animations&lt;/li&gt;
+&lt;li&gt;Bugs&lt;/li&gt;
+&lt;li&gt;Bugs!&lt;/li&gt;
+&lt;li&gt;Even More Bugs!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ok, let&amp;rsquo;s end it here.&lt;/p&gt;
+&lt;h2 id=&#34;systemd&#34;&gt;systemd&lt;/h2&gt;
+&lt;p&gt;From the other side of our linux coin is &lt;strong&gt;systemd&lt;/strong&gt;, a linux init system that creeped into every distro since Debian 7 codenamed &amp;ldquo;Jessie&amp;rdquo;
+Most people just don&amp;rsquo;t care enough about linux&amp;rsquo;s internal workings to hate systemd - it is still a usable and easy to use init system.
+I know that it&amp;rsquo;s a meme, but systemd really is the most bloated PID1 that ever existed, having a ton of useless services that shouldn&amp;rsquo;t even be there.&lt;/p&gt;
+&lt;h3 id=&#34;the-not-so-comprehensive-list-of-useless-soystemd-wonk-and-jank&#34;&gt;The not-so comprehensive list of useless soystemd wonk and jank&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;systemd-homed&lt;/li&gt;
+&lt;li&gt;systemd-logind&lt;/li&gt;
+&lt;li&gt;systemd-boot&lt;/li&gt;
+&lt;li&gt;systemd/Journal (yes, there are multiple naming conventions used there)&lt;/li&gt;
+&lt;li&gt;systemd-sysusers&lt;/li&gt;
+&lt;li&gt;systemd-nspawn&lt;/li&gt;
+&lt;li&gt;systemd-stub&lt;/li&gt;
+&lt;li&gt;systemd.mount (another naming convention)&lt;/li&gt;
+&lt;li&gt;systemd-fstab-generator (WHY, JUST WHY. &lt;code&gt;genfstab&lt;/code&gt; exists.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;all of these systemd modules shouldn&amp;rsquo;t be a part of the init system, but they somehow are&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Aside from systemd&amp;rsquo;s disregard of the UNIX philosophy, it boots significantly slower than for example runit or s6 (at least on all of my machines).
+It is really a beast, a performance hog and it simply just does too much. PID 1 should just start some services with dependency management and that&amp;rsquo;s it.
+Another big thing that i hate is &lt;strong&gt;pulseaudio&lt;/strong&gt;, even if it is being currently replaced by pipewire (and that&amp;rsquo;s really good) - it is a wonky mess that never works,
+uses too much system resources, isn&amp;rsquo;t system-wide, has horrible command-line interfaces and is just simply buggy.
+We should stick to alsa in the long-term. Why?
+It simply just works, yes - only after extensive configuration to let it work on modern browsers, add multi-channel support etc. - but it works.&lt;/p&gt;
+&lt;p&gt;The mentality of &lt;em&gt;Lennart Poettering&amp;rsquo;s&lt;/em&gt; software is spreading too.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-freedom-anyway&#34;&gt;What is Freedom anyway?&lt;/h2&gt;
+&lt;p&gt;Freedom in linux is decaying.
+Most people are forced to use pulseaudio (because of steam and other stuff), X.Org (wayland exists, but it isn&amp;rsquo;t as stable), systemd (because gnome) and other things.
+In the early days of linux there really was more choice than now.
+In the 90s and early 2000s, when UNIX systems came to your average Joe, people used BSDs, Linuxes, BeOS etc.
+Now it&amp;rsquo;s just ubuntu and arch.&lt;/p&gt;
+&lt;p&gt;People started realizing this and now some are moving to BSD or - if someone doesn&amp;rsquo;t care about privacy - MacOS.
+I suspect that in a few years most popular linux distros will be closer to windows than to any free-software UNIX imaginable.
+But let&amp;rsquo;s end this for now.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Linux users wanting it to be more &amp;ldquo;user-friendly&amp;rdquo; killed linux. Yes, it is more integrated - but at what cost?
+GNOME 3 and systemd are the greatest examples of this trend.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Piracy is 80% morally correct</title>
+		<link>https://zesrajsie.tk/piracy/</link>
+		<pubDate>Thu, 06 Oct 2022 21:51:54 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/piracy/</guid>
+		<description>&lt;p&gt;&lt;em&gt;&amp;ldquo;this will be a controversial one&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;is-piracy-stealing&#34;&gt;Is Piracy Stealing?&lt;/h2&gt;
+&lt;p&gt;No, not at all.
+Unlike real piracy (a group of guys goes into a boat in the middle of the fucking ocean and steals everything) nothing just ceases to exist.
+So technically it is just unauthorized file copying, which sounds stupid because everyone can copy files on their disk in any capacity.&lt;/p&gt;
+&lt;p&gt;Even then, let&amp;rsquo;s be honest.
+Stealing (like real stealing) from big corporations doesn&amp;rsquo;t hurt them much + nobody cares about them (outside of the apple community where apple inc. is their lord and savior).&lt;/p&gt;
+&lt;h2 id=&#34;what-about-that-20&#34;&gt;What about that 20%?&lt;/h2&gt;
+&lt;p&gt;That 20% is mostly stuff that is already illegal, or it&amp;rsquo;s just immoral anyways.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Porn (don&amp;rsquo;t coom kids.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Child Po- Cheese Pizza&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Why would you download this, yes downloading this stuff from torrent with a VPN is safe (kind of) but why?)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some indie games made by a guy in his basement worth for five bucks (not talking about AAA&amp;rsquo;s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Like these people actually want to make something good, support them. But still &amp;ldquo;no tux, no bux&amp;rdquo; is a rule that i&amp;rsquo;ll follow.)&lt;/p&gt;
+&lt;h2 id=&#34;the-bittorrent-protocol-itself&#34;&gt;The BitTorrent protocol itself&lt;/h2&gt;
+&lt;p&gt;I like torrents mostly because the BitTorrent protocol revolutionized the Internet.
+It was created when your average internet connection was around 50 KB/s, and most people still used dial-up.
+But why it was so revolutional?&lt;/p&gt;
+&lt;p&gt;First, it is very hard to shut down a torrent network - that&amp;rsquo;s why it is so commonly used for piracy and rare / lost media archival.
+Back in the day most websites were owned by people, not companies. A side effect of this was that servers of a website could be shut down at any time due to many reasons. The creator of that site could be bored, forgot to turn on his server etc.
+Obviously, when the servers are down, you cannot download stuff from this person. BitTorrent is decentralized, so everyone having the file on his own computer is a potential server. Only one person online (more popular torrents have even 50 people at the same time) can keep the torrent up and send the data to you.
+Because of this decentralization, most companies can&amp;rsquo;t stop even a single torrent.&lt;/p&gt;
+&lt;p&gt;Aside from that, download speeds of the files sent through torrent weren&amp;rsquo;t capped by the server, so these files could be downloaded with very high speeds.
+These reasons are all i need to prefer torrent over anything else.&lt;/p&gt;
+&lt;h2 id=&#34;how-2-interwebz-pirate&#34;&gt;how 2 interwebz pirate&lt;/h2&gt;
+&lt;p&gt;First, you need to know what is a torrent tracker.
+A torrent tracker is a server that - as the name suggests - tracks peers across many torrent networks. Most of these trackers are aggregated and hosted on sites like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;thepiratebay.org&lt;/li&gt;
+&lt;li&gt;1337x.to&lt;/li&gt;
+&lt;li&gt;rutracker.org (it&amp;rsquo;s in russian, some basic language skills required to use it on a daily basis)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;these are sites that i prefer to use.&lt;/p&gt;
+&lt;p&gt;How to download files from them? It&amp;rsquo;s easy.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;go to the website (example is from thepiratebay.org)&lt;/li&gt;
+&lt;li&gt;search what you want&lt;/li&gt;
+&lt;li&gt;click on it (and avoid ads when possible)&lt;/li&gt;
+&lt;li&gt;click on the button with da magnet&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;your client should appear and set up the torrent for you by now.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;relax and wait till the thing completes.&lt;/li&gt;
+&lt;li&gt;now you have your favourite music album, hentai game, or something else on your hard drive!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;ending&#34;&gt;Ending&lt;/h2&gt;
+&lt;p&gt;So that was it, i hope this guide to torrents was useful.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>m4kulatura&#39;s music corner :3</title>
+		<link>https://zesrajsie.tk/music/</link>
+		<pubDate>Thu, 22 Sep 2022 23:06:35 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/music/</guid>
+		<description>&lt;p&gt;yeah, i make music. nothing really interesting.
+started as a small side project, and now it&amp;rsquo;s the main thing i do.
+i used almost everything from FL Studio to MOD Trackers like OpenMPT or the OGs like Impulse Tracker and FastTracker II.
+here, have some of my albums, some sound bad, some sound good:&lt;/p&gt;
+&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/music.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/blog.css&#34;&gt;
+&lt;div class=&#34;grid&#34;&gt;
+
+        	&lt;div class=&#34;ibm_cp&#34;&gt;
+				
+			&lt;p&gt;barber for ducks (2023)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/barber_cover.png&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/cWxGCB4D#yHuWjUD2C-gTMrTsVDB41m4_zsF8deRh9jytw0ZfypI&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;&lt;div class=&#34;m4kulaturamusic&#34;&gt;
+		
+			&lt;p&gt;imagine fucking existing (2022)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/imagine_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/ELQFUCrQ#P0DmKX75QCRg8vUspQr8WO-fD5wvToSRjg9MKm7NBVE&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;&lt;div class=&#34;tracking&#34;&gt;
+		
+			&lt;p&gt;Tracking Devices (2021)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/trackingdevices_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/dG4TiaDK#OmE7ubjoY_R1O7QZY7FDNh9E7aY9XHSc6ohTeSd3qDM&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;&lt;div class=&#34;house&#34;&gt;
+		
+			&lt;p&gt;Chastity House (2022)&lt;/p&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/chastityhouse_cover.jpg&#34; alt=&#34; &#34;&gt;
+			&lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/NXIzBSpQ#Bi1xgvVaHVjRpLa-4ULB5h_0ip0m6Pwx22AMyigjYJY&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;
+		&lt;div class=&#34;stop&#34;&gt;
+		
+			&lt;p2&gt;bus stop [EP] (2023)&lt;/p2&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/busstop_cover.png&#34; alt=&#34; &#34;&gt; &lt;br&gt;
+			&lt;p2&gt;full track, no download required: &lt;/p2&gt; &lt;br&gt;
+			&lt;audio controls&gt;
+				&lt;source src=&#34;https://zesrajsie.tk/music/bus_stop.ogg&#34; type=&#34;audio/ogg&#34;&gt;
+			&lt;/audio&gt; &lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/cHgAhB5S#kmPaJDtAYu9TUbIVGCPmqVzOMnwXWHM7gEOj-pHC56I&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;
+		
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE: ADD SOME SAMPLES HERE SO PEOPLE WOULD LISTEN TO YOUR SHIT&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;all of my tracker modules (at the time of writing this) (more free music !!! )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mega.nz/file/JWhyhYTb#R5hu0qFe2qHGO2-njYW-YHgpvR_nM7PH81PPXh8GoQE&#34;&gt;downwoad it uwu&lt;/a&gt;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Reserve</title>
+		<link>https://zesrajsie.tk/reserve/</link>
+		<pubDate>Thu, 22 Sep 2022 22:14:13 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/reserve/</guid>
+		<description>&lt;h1 id=&#34;what-the-fuck-is-it&#34;&gt;What the fuck is it?&lt;/h1&gt;
+&lt;p&gt;m4kulatura&amp;rsquo;s private reserve (MPR) is a repository full of software, games, music and other stuff.
+it is submitted by m4kulatura and his friends mostly for personal use and archival.
+still, anyone with an internet connection can download files from the repo.&lt;/p&gt;
+&lt;h1 id=&#34;download-as-much-as-you-want&#34;&gt;download as much as you want!&lt;/h1&gt;
+&lt;p&gt;http server: &lt;a href=&#34;https://ftp.whentheh.tk&#34;&gt;https://ftp.whentheh.tk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(currently inactive due to maintenance)&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>M4kulatura</title>
+		<link>https://zesrajsie.tk/wiki/m4kulatura/</link>
+		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wiki/m4kulatura/</guid>
+		<description>&lt;p&gt;M4kulatura is the main character in the m4kulatura lore.
+Basically the center-piece connecting everything together.
+Working on his webiste and multiple other projects since 2016.
+Oh and he also makes music: &lt;a href=&#34;https://makulaturka.tk/music&#34;&gt;https://makulaturka.tk/music&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;info&#34;&gt;Info:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Class: Boomer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sub-Class: Femboy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Age: 14 (as of now)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sex: Male (sadly)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Orientation (sowwy fow le LGBT speek ;-;): asexual, heteroromantic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Has a boyfriend: nope.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Has a girlfriend: nope. (oficially)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goes to work: nope.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Goes to school: yes, he goes to ZSTiE.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;related-to&#34;&gt;Related to:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;blueberry (best friend)&lt;/li&gt;
+&lt;li&gt;DeusVult (2nd best friend)&lt;/li&gt;
+&lt;li&gt;Dynio (coworker / friend)
+tty7derty
+askel
+snybej
+przeróbek
+major
+ballie&lt;/li&gt;
+&lt;li&gt;Kosmitek (classmate)
+Lewan&lt;/li&gt;
+&lt;li&gt;Matteo&lt;/li&gt;
+&lt;li&gt;CartoonGuy (an old friend)&lt;/li&gt;
+&lt;li&gt;Sofeł (&lt;em&gt;it&amp;rsquo;s a long story&lt;/em&gt; / ex (?) )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;M4kulatura is the main maintainer of projects like WarpOS, TMS, MMS, datadesk and others.
+He does it mostly for fun and to let his mind focus on things other than school and work.
+Aside from maintaining these systems he has an average social life and composes music in his spare time.&lt;/p&gt;
+&lt;p&gt;M4kulatura a few years ago started talking to sofeł.
+They were best friends for a few years, knowing everything about eachother and living their lives together.
+Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After some time they broke up, this breakup caused a suicide attempt involving m4kulatura, as well as other issues.&lt;/p&gt;
+&lt;p&gt;M4kulatura also has some controversial, right-wing political opinions.&lt;/p&gt;
+&lt;h2 id=&#34;likes&#34;&gt;Likes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Old Tech&lt;/li&gt;
+&lt;li&gt;Free Software&lt;/li&gt;
+&lt;li&gt;Music&lt;/li&gt;
+&lt;li&gt;Classic Games&lt;/li&gt;
+&lt;li&gt;History&lt;/li&gt;
+&lt;li&gt;Politics&lt;/li&gt;
+&lt;li&gt;Economics&lt;/li&gt;
+&lt;li&gt;Philosophy&lt;/li&gt;
+&lt;li&gt;Low-Level Programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hates&#34;&gt;Hates:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Zoomers&lt;/li&gt;
+&lt;li&gt;TikTok&lt;/li&gt;
+&lt;li&gt;Proprietary Software&lt;/li&gt;
+&lt;li&gt;Microsoft&lt;/li&gt;
+&lt;li&gt;Apple Stans&lt;/li&gt;
+&lt;li&gt;LGBT+ Fandom&lt;/li&gt;
+&lt;li&gt;Furries&lt;/li&gt;
+&lt;li&gt;Anime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;annotations&#34;&gt;Annotations:&lt;/h1&gt;
+&lt;p&gt;none&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>wiki template</title>
+		<link>https://zesrajsie.tk/wiki/template/</link>
+		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wiki/template/</guid>
+		<description>&lt;p&gt;&lt;em&gt;a basic summary&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;info&#34;&gt;Info:&lt;/h1&gt;
+&lt;h1 id=&#34;related-to&#34;&gt;Related to:&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;more detailed info&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;likes&#34;&gt;Likes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hates&#34;&gt;Hates:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;annotations&#34;&gt;Annotations:&lt;/h1&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Wikitest</title>
+		<link>https://zesrajsie.tk/wikitest/</link>
+		<pubDate>Thu, 22 Sep 2022 22:01:17 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wikitest/</guid>
+		<description>&lt;p&gt;esse mam z cb&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About</title>
+		<link>https://zesrajsie.tk/about/</link>
+		<pubDate>Thu, 22 Sep 2022 21:54:15 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/about/</guid>
+		<description>&lt;p&gt;Hi, i’m m4kulatura, you can contact me on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;email: &lt;a href=&#34;mailto:m4kulatura@gmail.com&#34;&gt;m4kulatura@gmail.com&lt;/a&gt; (yep, i still use gmail)&lt;/li&gt;
+&lt;li&gt;Discord: cheese thrower#3178&lt;/li&gt;
+&lt;li&gt;IRC: currently closed, no irc :C&lt;/li&gt;
+&lt;li&gt;Soulseek: m4kulatura&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;oh and here&amp;rsquo;s some info about me&lt;/p&gt;
+&lt;h1 id=&#34;what-do-i-use&#34;&gt;what do i use?&lt;/h1&gt;
+&lt;p&gt;OS: Void GNU/Linux 64-bit&lt;/p&gt;
+&lt;p&gt;Desktop: MATE&lt;/p&gt;
+&lt;p&gt;Web Browser: FurryFox (mozilla firefox)&lt;/p&gt;
+&lt;p&gt;Image Editor: GIMP + Krita (for drawing)&lt;/p&gt;
+&lt;p&gt;Video Editor: Blender&lt;/p&gt;
+&lt;p&gt;3D art / 2D art / VFX: again, Blender&lt;/p&gt;
+&lt;p&gt;Music Stuff: trackers + Ardour&lt;/p&gt;
+&lt;p&gt;Text / Code editor: Vim&lt;/p&gt;
+&lt;h1 id=&#34;hardware&#34;&gt;hardware:&lt;/h1&gt;
+&lt;p&gt;Cellphone: Samsung Galaxy A13, i fucking hate that phone&lt;/p&gt;
+&lt;p&gt;Music Player: my phone, connected to my server running mpd.&lt;/p&gt;
+&lt;p&gt;Laptop: Lenovo Thinkpad x230&lt;/p&gt;
+&lt;p&gt;Headphones: AKG K712 PRO&lt;/p&gt;
+&lt;p&gt;Microphone: Crono Studio 101 (cheap shit)&lt;/p&gt;
+&lt;p&gt;Keyboard: SPC Gear GK630&lt;/p&gt;
+&lt;p&gt;Mouse: Glorious Model O and sometimes a Razer Diamondback (original from 2005)&lt;/p&gt;
+&lt;h1 id=&#34;specs&#34;&gt;specs:&lt;/h1&gt;
+&lt;p&gt;CPU: AMD Ryzen 5 3600&lt;/p&gt;
+&lt;p&gt;GPU: AMD Radeon 6600 XT&lt;/p&gt;
+&lt;p&gt;RAM: 16GB (2x8) DDR4 3200MHz&lt;/p&gt;
+&lt;p&gt;HDD / SSD: 500gb SSD; 500gb HDD; 2TB HDD;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Blog</title>
+		<link>https://zesrajsie.tk/blog/</link>
+		<pubDate>Thu, 22 Sep 2022 21:51:55 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/blog/</guid>
+		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2023-03-05T09:36:26&amp;#43;01:00&#34;&gt;2023 Mar 05&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/sneed/&#34;&gt;Sneed&amp;#39;s Feed and Seed&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-12-30T00:10:05&amp;#43;01:00&#34;&gt;2022 Dec 30&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/femboyos/&#34;&gt;my stuff or smthn: The FemboyOS Logo&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-19T21:47:40&amp;#43;02:00&#34;&gt;2022 Oct 19&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/goodpc/&#34;&gt;You DON&amp;#39;T NEED a good PC&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-10T20:55:32&amp;#43;02:00&#34;&gt;2022 Oct 10&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/linuxrust/&#34;&gt;Linux gets Rusty: My Response&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-06T22:03:49&amp;#43;02:00&#34;&gt;2022 Oct 06&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/datadesk/&#34;&gt;Datadesk: What is it?&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-06T21:57:30&amp;#43;02:00&#34;&gt;2022 Oct 06&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/linuxsucks/&#34;&gt;Linux is dead (and we killed it)&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-10-06T21:51:54&amp;#43;02:00&#34;&gt;2022 Oct 06&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/piracy/&#34;&gt;Piracy is 80% morally correct&lt;/a&gt;&lt;/li&gt;
+
+</description>
+	</item>
+	
+	<item>
+		<title>M4kulatura wiki</title>
+		<link>https://zesrajsie.tk/wiki/</link>
+		<pubDate>Thu, 22 Sep 2022 21:51:55 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/wiki/</guid>
+		<description>&lt;p&gt;This is the m4kulatura lore wiki, sadly it hasn&amp;rsquo;t been updated in a while.
+Fortunately i&amp;rsquo;m currently working on it!
+Feel free to explore.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wiki/m4kulatura/&#34;&gt;M4kulatura&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wiki/template/&#34;&gt;wiki template&lt;/a&gt;&lt;/li&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2022-09-22T22:01:17&amp;#43;02:00&#34;&gt;2022 Sep 22&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/wikitest/&#34;&gt;Wikitest&lt;/a&gt;&lt;/li&gt;
+
+</description>
+	</item>
+	
+	</channel>
+</rss>

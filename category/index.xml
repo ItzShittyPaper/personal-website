@@ -5,10 +5,27 @@
 	<description>Recent content in Category on zesrajsie.tk</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Fri, 30 Dec 2022 00:10:05 +0100</lastBuildDate>
+	<lastBuildDate>Sun, 05 Mar 2023 09:36:26 +0100</lastBuildDate>
     
         <atom:link href="https://zesrajsie.tk/category/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>Sneed&#39;s Feed and Seed</title>
+		<link>https://zesrajsie.tk/sneed/</link>
+		<pubDate>Sun, 05 Mar 2023 09:36:26 +0100</pubDate>
+		
+		<guid>https://zesrajsie.tk/sneed/</guid>
+		<description>&lt;p&gt;&lt;em&gt;Formerly Chuck&amp;rsquo;s&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;btw the site is back up, with some changes and quality of life improvements&lt;/p&gt;
+&lt;h2 id=&#34;what-happened&#34;&gt;What happened?&lt;/h2&gt;
+&lt;p&gt;im planning on releasing a satirical tech news site one day, currently working on it.
+i&amp;rsquo;ll make a post about it in a few weeks
+also im working on a vidya game, and that shit takes a ton of time i guess&lt;/p&gt;
+&lt;p&gt;this place is a huge burden on me really, it&amp;rsquo;s hard to update, the codebase is shit and i don&amp;rsquo;t really have much to say, so there are like 4 posts a year. that means that even IF someone sees this, they&amp;rsquo;ll think that the site is dead and no one works on it anymore. the thing is when i closed it many people online wondered where it went, so i couldn&amp;rsquo;t just leave it like that. so here it is again. have fun!&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>my stuff or smthn: The FemboyOS Logo</title>
@@ -444,6 +461,7 @@ started as a small side project, and now it&amp;rsquo;s the main thing i do.
 i used almost everything from FL Studio to MOD Trackers like OpenMPT or the OGs like Impulse Tracker and FastTracker II.
 here, have some of my albums, some sound bad, some sound good:&lt;/p&gt;
 &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/music.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/blog.css&#34;&gt;
 &lt;div class=&#34;grid&#34;&gt;
 
         	&lt;div class=&#34;ibm_cp&#34;&gt;
@@ -475,6 +493,18 @@ here, have some of my albums, some sound bad, some sound good:&lt;/p&gt;
 			&lt;a href=&#34;https://mega.nz/file/NXIzBSpQ#Bi1xgvVaHVjRpLa-4ULB5h_0ip0m6Pwx22AMyigjYJY&#34;&gt;Download Link&lt;/a&gt;
 
 		&lt;/div&gt;
+		&lt;div class=&#34;stop&#34;&gt;
+		
+			&lt;p2&gt;bus stop [EP] (2023)&lt;/p2&gt;
+			&lt;img src=&#34;https://zesrajsie.tk/busstop_cover.png&#34; alt=&#34; &#34;&gt; &lt;br&gt;
+			&lt;p2&gt;full track, no download required: &lt;/p2&gt; &lt;br&gt;
+			&lt;audio controls&gt;
+				&lt;source src=&#34;https://zesrajsie.tk/music/bus_stop.ogg&#34; type=&#34;audio/ogg&#34;&gt;
+			&lt;/audio&gt; &lt;br&gt;
+			&lt;a href=&#34;https://mega.nz/file/cHgAhB5S#kmPaJDtAYu9TUbIVGCPmqVzOMnwXWHM7gEOj-pHC56I&#34;&gt;Download Link&lt;/a&gt;
+
+		&lt;/div&gt;
+		
 &lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;NOTE: ADD SOME SAMPLES HERE SO PEOPLE WOULD LISTEN TO YOUR SHIT&lt;/em&gt;&lt;/p&gt;
@@ -634,28 +664,35 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		<pubDate>Thu, 22 Sep 2022 21:54:15 +0200</pubDate>
 		
 		<guid>https://zesrajsie.tk/about/</guid>
-		<description>&lt;p&gt;Hi, i’m m4kulatura, your favourite dumbass and linux user from the hood. I usually do music and programming (mostly for UNIX systems).&lt;/p&gt;
-&lt;h1 id=&#34;what-do-i-use&#34;&gt;What Do I Use?&lt;/h1&gt;
+		<description>&lt;p&gt;Hi, i’m m4kulatura, you can contact me on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;email: &lt;a href=&#34;mailto:m4kulatura@gmail.com&#34;&gt;m4kulatura@gmail.com&lt;/a&gt; (yep, i still use gmail)&lt;/li&gt;
+&lt;li&gt;Discord: cheese thrower#3178&lt;/li&gt;
+&lt;li&gt;IRC: currently closed, no irc :C&lt;/li&gt;
+&lt;li&gt;Soulseek: m4kulatura&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;oh and here&amp;rsquo;s some info about me&lt;/p&gt;
+&lt;h1 id=&#34;what-do-i-use&#34;&gt;what do i use?&lt;/h1&gt;
 &lt;p&gt;OS: Void GNU/Linux 64-bit&lt;/p&gt;
-&lt;p&gt;Desktop: GNOME 42&lt;/p&gt;
-&lt;p&gt;Web Browser: firefox&lt;/p&gt;
-&lt;p&gt;Image Editor: GIMP + Krita&lt;/p&gt;
+&lt;p&gt;Desktop: MATE&lt;/p&gt;
+&lt;p&gt;Web Browser: FurryFox (mozilla firefox)&lt;/p&gt;
+&lt;p&gt;Image Editor: GIMP + Krita (for drawing)&lt;/p&gt;
 &lt;p&gt;Video Editor: Blender&lt;/p&gt;
-&lt;p&gt;3D art / 2D art / VFX: Blender&lt;/p&gt;
-&lt;p&gt;Music Stuff: Mostly MOD trackers + Ardour / Bitwig Studio&lt;/p&gt;
+&lt;p&gt;3D art / 2D art / VFX: again, Blender&lt;/p&gt;
+&lt;p&gt;Music Stuff: trackers + Ardour&lt;/p&gt;
 &lt;p&gt;Text / Code editor: Vim&lt;/p&gt;
-&lt;h1 id=&#34;hardware&#34;&gt;Hardware:&lt;/h1&gt;
-&lt;p&gt;Cellphone: Xiaomi Mi 10T Lite 5G&lt;/p&gt;
-&lt;p&gt;Media Player: Astell&amp;amp;Kern AK70 MKII&lt;/p&gt;
-&lt;p&gt;Laptop: Thinkpad x230&lt;/p&gt;
-&lt;p&gt;Headphones: AKG K712&lt;/p&gt;
-&lt;p&gt;Microphone: Crono Studio 101&lt;/p&gt;
+&lt;h1 id=&#34;hardware&#34;&gt;hardware:&lt;/h1&gt;
+&lt;p&gt;Cellphone: Samsung Galaxy A13, i fucking hate that phone&lt;/p&gt;
+&lt;p&gt;Music Player: my phone, connected to my server running mpd.&lt;/p&gt;
+&lt;p&gt;Laptop: Lenovo Thinkpad x230&lt;/p&gt;
+&lt;p&gt;Headphones: AKG K712 PRO&lt;/p&gt;
+&lt;p&gt;Microphone: Crono Studio 101 (cheap shit)&lt;/p&gt;
 &lt;p&gt;Keyboard: SPC Gear GK630&lt;/p&gt;
-&lt;p&gt;Mouse: Glorious Model O + Razer Diamondback (original from 2005)&lt;/p&gt;
-&lt;h1 id=&#34;pc-specs&#34;&gt;PC specs:&lt;/h1&gt;
+&lt;p&gt;Mouse: Glorious Model O and sometimes a Razer Diamondback (original from 2005)&lt;/p&gt;
+&lt;h1 id=&#34;specs&#34;&gt;specs:&lt;/h1&gt;
 &lt;p&gt;CPU: AMD Ryzen 5 3600&lt;/p&gt;
 &lt;p&gt;GPU: AMD Radeon 6600 XT&lt;/p&gt;
-&lt;p&gt;RAM: 16GB DDR4 3200MHz&lt;/p&gt;
+&lt;p&gt;RAM: 16GB (2x8) DDR4 3200MHz&lt;/p&gt;
 &lt;p&gt;HDD / SSD: 500gb SSD; 500gb HDD; 2TB HDD;&lt;/p&gt;
 </description>
 	</item>
@@ -667,6 +704,8 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		
 		<guid>https://zesrajsie.tk/blog/</guid>
 		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2023-03-05T09:36:26&amp;#43;01:00&#34;&gt;2023 Mar 05&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/sneed/&#34;&gt;Sneed&amp;#39;s Feed and Seed&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2022-12-30T00:10:05&amp;#43;01:00&#34;&gt;2022 Dec 30&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/femboyos/&#34;&gt;my stuff or smthn: The FemboyOS Logo&lt;/a&gt;&lt;/li&gt;
 
