@@ -11,6 +11,54 @@
 	
 	
 	<item>
+		<title>Why design is important in the Free Software space.</title>
+		<link>https://zesrajsie.tk/oss_design/</link>
+		<pubDate>Wed, 26 Apr 2023 20:30:49 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/oss_design/</guid>
+		<description>&lt;p&gt;&lt;em&gt;Hi, i came back from the dead again!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So recently i&amp;rsquo;ve been thinking about the design of various FOSS programs, and why do i think they&amp;rsquo;re ugly. Here i&amp;rsquo;m going to mostly focus on GIMP, Ardour and Krita, but i&amp;rsquo;ll also show some TUI (terminal / ncurses) programs for comparison.&lt;/p&gt;
+&lt;p&gt;Most people will agree that FOSS software tends to look worse than it&amp;rsquo;s proprietary counterparts. GIMP looks worse than Photoshop, Kdenlive looks worse than Resolve etc.
+There are a ton of reasons why that&amp;rsquo;s the case, but i&amp;rsquo;m going to focus on the most important one really. And that is:&lt;/p&gt;
+&lt;h2 id=&#34;made-by-programmers-for-programmers&#34;&gt;&amp;ldquo;made by programmers, for programmers&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;The fact is that programmers are engineers by trait, designers aren&amp;rsquo;t.
+In a traditional software company, developers program a feature in, and then a team of designers decide how it will be actually presented for the end user. You know, sketches / concept art, mockups, design systems and other stuff. Finally after a ton of brainstorming and a rigorous testing process the final design gets sent back to the dev team and gets implemented for the release.
+Let&amp;rsquo;s compare that to how a FOSS project is developed:
+A feature is developed and pushed into the beta branch in the repo, and then random, mostly unexperienced people test it before release. Since everything is implemented by a few programmers, the entire feature is very rough around the edges. The few remaining bugs are fixed in the course of a few days. The design is later tacked on at the end and the entire feature gets pushed into the main branch.
+The design usually is still bad and full of unnecessary distractions, so it gets polished in the next major release.&lt;/p&gt;
+&lt;p&gt;So in, for example, Photoshop, a feature can get introduced a year later than in it&amp;rsquo;s main FOSS competitor, GIMP, and still be as usable due to the slower design pace of free software.&lt;/p&gt;
+&lt;h2 id=&#34;toolkit-bonanza&#34;&gt;toolkit bonanza&lt;/h2&gt;
+&lt;p&gt;Aside from the functional side of design, there are also aesthetics and themeing.
+Most FOSS projects use common UI toolkits like GTK or Qt, so themeing is mostly dependent on the toolkit used. This is especially problematic on Linux, where the user can specify a global GTK or Qt theme to be used in all applications. While this option is useful for simple programs like PDF viewers (and others), and makes programs consistent, it isn&amp;rsquo;t very effective for advanced applications, sometimes breaking widgets and messing with colour palletes. Another gripe i have with this feature that a custom theme literally replaces the application&amp;rsquo;s design system, completely disregarding designer&amp;rsquo;s vision for the software.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;imagine if FL Studio used adwaita&amp;hellip;&lt;/em&gt;
+
+&lt;figure &gt;&lt;img src=&#34;../img/oss_design/fl.jpg&#34; alt=&#34;this is not adwaita tho&#34;&gt;&lt;/figure&gt;
+
+&lt;strong&gt;this is not adwaita tho, it&amp;rsquo;s somehow even worse&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s really mostly a GTK problem, since Qt does themeing way better by allowing specific programs (like Krita or Kdenlive for example) to override the system Qt theme and also separating the Qt Color Scheme from the theme, theoretically allowing users to use custom color schemes independently from the rest of the application, limiting the potential jankiness, or sometime even eleminating it completely. GTK does not have this though, so you&amp;rsquo;re stuck with your system theme.&lt;/p&gt;
+&lt;p&gt;A common thing that software developers do to avoid this, is forking the toolkit and building a custom version of it - often with it&amp;rsquo;s own themeing engine - for the project. Im mostly going to reference ardour with this article, since it&amp;rsquo;s a perfect example of a badly done custom toolkit, which hasn&amp;rsquo;t been updated in years, and barely works (in my opinion).
+At first glance ardour seems like an ideal application when it comes to open-source design, it&amp;rsquo;s consistent, has a custom toolkit and has it&amp;rsquo;s own design language. Also it&amp;rsquo;s very customizable letting you change the color scheme, the transparency of most UI elements, the button style, volume meter style etc. The problem begins when you start actually using it. The first thing most people are going to notice is that some parts of ardour are at best questionable when it comes to design.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;&lt;img src=&#34;../img/oss_design/ardour_screen.png&#34; alt=&#34;the audio connections panel&#34;&gt;&lt;/figure&gt;
+
+&lt;strong&gt;that &amp;lsquo;audio connections&amp;rsquo; panel is really misaligned and generally not suitable for small displays, also it requires a ton of resizing to even see some of the connections. i would personally just use a catia-style patchbay thing.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I can nitpick weird font choices, misaligned buttons etc. but that&amp;rsquo;s not the point. Instead im going to focus on the toolkit itself, which is mainly GTK+2, but mishmashed with Qt and some other custom widgets. GTK2 itself is deprecated and isn&amp;rsquo;t really used for years now. While i don&amp;rsquo;t have a problem with that, it&amp;rsquo;s unmaintained even by the Ardour team itself. I can only describe the GTK2 foundation as a huge technical debt wearing a &amp;ldquo;skeumorphism nice&amp;rdquo; mask. &lt;em&gt;i said that as a person that loves skeumorphic designs.&lt;/em&gt;
+Examples like these can be seen in most semi-professional FOSS software projects, like GIMP - where at the default scale the icons on the bottom of the right sidebar are cut off and not really clear to the user. But really who does it right?&lt;/p&gt;
+&lt;h2 id=&#34;how-a-good-gui-should-look-like-on-all-platforms&#34;&gt;how a good GUI should look like (on all platforms)&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Blender.&lt;/em&gt;
+
+&lt;figure &gt;&lt;img src=&#34;../img/oss_design/blender.jpeg&#34; alt=&#34;this is how blender looks like&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;But really, blender is a perfect example of good FOSS design.
+While people in some 3D / CGI circles don&amp;rsquo;t like blender because of it&amp;rsquo;s design being rooted in the late 90s, and not being refactored in the terms of workflow since then, i can&amp;rsquo;t say it is worse than big projects like 3D Studio Max or Cinema 4D. The team at Blender Foundation did a stellar job at reworking the look and feel of the program in Blender 2.8, making it comparable (or even better) to some proprietary programs.
+The layout is clear, easy to understand, AND customizable at the same time, the tabs (while being mostly for show in the default workspace) can help immensely when working, the UI has it&amp;rsquo;s clear and distinct visual style. This is how a profrssional software project should look like. No exceptions.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;FOSS projects tend to have bad design, but that doesn&amp;rsquo;t have to be the case. More people in the community should start focusing on it, improving the experience and promoting the project at the same time. I also would like to see hobbyist designers work on open-source software, submitting designs and making small adjustments.
+Ok it&amp;rsquo;s like 1am, it&amp;rsquo;s eepy time. Bye.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Sneed&#39;s Feed and Seed</title>
 		<link>https://zesrajsie.tk/sneed/</link>
 		<pubDate>Sun, 05 Mar 2023 09:36:26 +0100</pubDate>
@@ -704,6 +752,8 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		
 		<guid>https://zesrajsie.tk/blog/</guid>
 		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2023-04-26T20:30:49&amp;#43;02:00&#34;&gt;2023 Apr 26&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/oss_design/&#34;&gt;Why design is important in the Free Software space.&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2023-03-05T09:36:26&amp;#43;01:00&#34;&gt;2023 Mar 05&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/sneed/&#34;&gt;Sneed&amp;#39;s Feed and Seed&lt;/a&gt;&lt;/li&gt;
 

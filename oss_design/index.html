@@ -1,0 +1,68 @@
+<link rel="stylesheet" type="text/css" href="/css/nav.css">
+<div class="nigger">
+  <nav id="nav" class="nav justify-content-center">
+
+	  <a href="/index.html">Home</a> 
+	  &bull;
+	  <a href="/blog">Blog</a> 
+	  &bull;
+
+	  <a href="/music/">Music</a> 
+	  &bull;
+	  <a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
+	  &bull;
+	  <a href="/reserve/">Reserve</a> 
+	  &bull;
+    	  <a href="/about/">About Me</a>
+
+  </nav>
+</div>
+<link rel="stylesheet" type="text/css" href="/blog.css">
+<header><h1>Why design is important in the Free Software space.</h1></header>
+<article>
+<p><em>Hi, i came back from the dead again!</em></p>
+<p>So recently i&rsquo;ve been thinking about the design of various FOSS programs, and why do i think they&rsquo;re ugly. Here i&rsquo;m going to mostly focus on GIMP, Ardour and Krita, but i&rsquo;ll also show some TUI (terminal / ncurses) programs for comparison.</p>
+<p>Most people will agree that FOSS software tends to look worse than it&rsquo;s proprietary counterparts. GIMP looks worse than Photoshop, Kdenlive looks worse than Resolve etc.
+There are a ton of reasons why that&rsquo;s the case, but i&rsquo;m going to focus on the most important one really. And that is:</p>
+<h2 id="made-by-programmers-for-programmers">&ldquo;made by programmers, for programmers&rdquo;</h2>
+<p>The fact is that programmers are engineers by trait, designers aren&rsquo;t.
+In a traditional software company, developers program a feature in, and then a team of designers decide how it will be actually presented for the end user. You know, sketches / concept art, mockups, design systems and other stuff. Finally after a ton of brainstorming and a rigorous testing process the final design gets sent back to the dev team and gets implemented for the release.
+Let&rsquo;s compare that to how a FOSS project is developed:
+A feature is developed and pushed into the beta branch in the repo, and then random, mostly unexperienced people test it before release. Since everything is implemented by a few programmers, the entire feature is very rough around the edges. The few remaining bugs are fixed in the course of a few days. The design is later tacked on at the end and the entire feature gets pushed into the main branch.
+The design usually is still bad and full of unnecessary distractions, so it gets polished in the next major release.</p>
+<p>So in, for example, Photoshop, a feature can get introduced a year later than in it&rsquo;s main FOSS competitor, GIMP, and still be as usable due to the slower design pace of free software.</p>
+<h2 id="toolkit-bonanza">toolkit bonanza</h2>
+<p>Aside from the functional side of design, there are also aesthetics and themeing.
+Most FOSS projects use common UI toolkits like GTK or Qt, so themeing is mostly dependent on the toolkit used. This is especially problematic on Linux, where the user can specify a global GTK or Qt theme to be used in all applications. While this option is useful for simple programs like PDF viewers (and others), and makes programs consistent, it isn&rsquo;t very effective for advanced applications, sometimes breaking widgets and messing with colour palletes. Another gripe i have with this feature that a custom theme literally replaces the application&rsquo;s design system, completely disregarding designer&rsquo;s vision for the software.</p>
+<p><em>imagine if FL Studio used adwaita&hellip;</em>
+
+<figure ><img src="../img/oss_design/fl.jpg" alt="this is not adwaita tho"></figure>
+
+<strong>this is not adwaita tho, it&rsquo;s somehow even worse</strong></p>
+<p>It&rsquo;s really mostly a GTK problem, since Qt does themeing way better by allowing specific programs (like Krita or Kdenlive for example) to override the system Qt theme and also separating the Qt Color Scheme from the theme, theoretically allowing users to use custom color schemes independently from the rest of the application, limiting the potential jankiness, or sometime even eleminating it completely. GTK does not have this though, so you&rsquo;re stuck with your system theme.</p>
+<p>A common thing that software developers do to avoid this, is forking the toolkit and building a custom version of it - often with it&rsquo;s own themeing engine - for the project. Im mostly going to reference ardour with this article, since it&rsquo;s a perfect example of a badly done custom toolkit, which hasn&rsquo;t been updated in years, and barely works (in my opinion).
+At first glance ardour seems like an ideal application when it comes to open-source design, it&rsquo;s consistent, has a custom toolkit and has it&rsquo;s own design language. Also it&rsquo;s very customizable letting you change the color scheme, the transparency of most UI elements, the button style, volume meter style etc. The problem begins when you start actually using it. The first thing most people are going to notice is that some parts of ardour are at best questionable when it comes to design.</p>
+<p>
+<figure ><img src="../img/oss_design/ardour_screen.png" alt="the audio connections panel"></figure>
+
+<strong>that &lsquo;audio connections&rsquo; panel is really misaligned and generally not suitable for small displays, also it requires a ton of resizing to even see some of the connections. i would personally just use a catia-style patchbay thing.</strong></p>
+<p>I can nitpick weird font choices, misaligned buttons etc. but that&rsquo;s not the point. Instead im going to focus on the toolkit itself, which is mainly GTK+2, but mishmashed with Qt and some other custom widgets. GTK2 itself is deprecated and isn&rsquo;t really used for years now. While i don&rsquo;t have a problem with that, it&rsquo;s unmaintained even by the Ardour team itself. I can only describe the GTK2 foundation as a huge technical debt wearing a &ldquo;skeumorphism nice&rdquo; mask. <em>i said that as a person that loves skeumorphic designs.</em>
+Examples like these can be seen in most semi-professional FOSS software projects, like GIMP - where at the default scale the icons on the bottom of the right sidebar are cut off and not really clear to the user. But really who does it right?</p>
+<h2 id="how-a-good-gui-should-look-like-on-all-platforms">how a good GUI should look like (on all platforms)</h2>
+<p><em>Blender.</em>
+
+<figure ><img src="../img/oss_design/blender.jpeg" alt="this is how blender looks like"></figure>
+</p>
+<p>But really, blender is a perfect example of good FOSS design.
+While people in some 3D / CGI circles don&rsquo;t like blender because of it&rsquo;s design being rooted in the late 90s, and not being refactored in the terms of workflow since then, i can&rsquo;t say it is worse than big projects like 3D Studio Max or Cinema 4D. The team at Blender Foundation did a stellar job at reworking the look and feel of the program in Blender 2.8, making it comparable (or even better) to some proprietary programs.
+The layout is clear, easy to understand, AND customizable at the same time, the tabs (while being mostly for show in the default workspace) can help immensely when working, the UI has it&rsquo;s clear and distinct visual style. This is how a profrssional software project should look like. No exceptions.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>FOSS projects tend to have bad design, but that doesn&rsquo;t have to be the case. More people in the community should start focusing on it, improving the experience and promoting the project at the same time. I also would like to see hobbyist designers work on open-source software, submitting designs and making small adjustments.
+Ok it&rsquo;s like 1am, it&rsquo;s eepy time. Bye.</p>
+<br>
+<br>
+<br>
+<a>copyright lololol</a>
+<br>
+<a>made by m4kulatura</a>
+
