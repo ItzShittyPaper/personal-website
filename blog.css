@@ -23,7 +23,7 @@ pre {
 
   color: #000000;
   margin: auto;
-  text-align: center;
+  text-align: left;
   font-family: 'IBM Plex Mono', monospace;
 
 }
@@ -48,7 +48,6 @@ a {
 
   align-content: center;
   margin: auto;
-  font-size: 24px;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
 

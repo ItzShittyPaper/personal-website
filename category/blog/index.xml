@@ -5,10 +5,91 @@
 	<description>Recent content in blog on zesrajsie.tk</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Wed, 26 Apr 2023 20:30:49 +0200</lastBuildDate>
+	<lastBuildDate>Mon, 03 Jul 2023 19:48:15 +0200</lastBuildDate>
     
         <atom:link href="https://zesrajsie.tk/category/blog/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>FOrg - writing *NIX-style utilities in C</title>
+		<link>https://zesrajsie.tk/forg/</link>
+		<pubDate>Mon, 03 Jul 2023 19:48:15 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/forg/</guid>
+		<description>&lt;p&gt;&lt;em&gt;Hi, sorry for my absence, and a long break.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the course of the last month or so i have worked on a file organizer program in C that would fit in with the GNU / BSD Utils. All in 254 lines of code and 190-something SLOC according to github.
+I made it with the purpose of learning POSIX APIs and some GNU ones like &lt;em&gt;getopt&lt;/em&gt;. Also i wanted to write something to aid me with my desktop full of icons and other stuff. Before we begin, i&amp;rsquo;d like to say that i&amp;rsquo;m not a professional, or even a semi-professional programmer. My code absolutely sucks and if someone asked me to write &amp;ldquo;FizzBuzz&amp;rdquo; in javascript i would spectacularly fail (probably because i don&amp;rsquo;t know anything about javascript).&lt;/p&gt;
+&lt;h2 id=&#34;the-programming&#34;&gt;The Programming&lt;/h2&gt;
+&lt;p&gt;At first i thought that was easy, since i&amp;rsquo;m relatively knowledgable with C and programmed for Linux for 3 years. I started with a typical &amp;ldquo;Hello world!&amp;rdquo; and a getopt while loop to parse command-line arguments.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;#34;stdio.h&amp;#34;
+#include &amp;#34;stdlib.h&amp;#34;
+#include &amp;#34;ctype.h&amp;#34;
+#include &amp;#34;dirent.h&amp;#34; 
+#include &amp;#34;string.h&amp;#34;
+
+#include &amp;#34;sys/types.h&amp;#34;
+#include &amp;#34;sys/stat.h&amp;#34;
+#include &amp;#34;errno.h&amp;#34;
+#include &amp;#34;unistd.h&amp;#34;
+#include &amp;#34;fcntl.h&amp;#34;
+#include &amp;#34;getopt.h&amp;#34;
+
+int main(int argc, char *argv[]) {
+
+	while((opt = getopt(argc, argv, &amp;#34;:h?&amp;#34;)) != -1) {
+
+		switch(opt)  {
+
+			case &amp;#39;h&amp;#39;:
+				showhelp();
+				return 0;
+				break;
+			case &amp;#39;?&amp;#39;:
+				printf(&amp;#34;Unknown option: %c\n&amp;#34;, optopt);
+				break;
+			case &amp;#39;:&amp;#39;:
+				printf(&amp;#34;Missing arg for %c\n&amp;#34;, optopt);
+				break;
+		} 
+	} 
+
+	/* optind is for the extra arguments  which are not parsed */
+	for(int index = optind; index &amp;lt; argc; index++ &amp;amp;&amp;amp; flags.verbose != 0){     
+		printf(&amp;#34;extra arguments: %s\n&amp;#34;, argv[optind]);
+	}
+     
+	return 0;
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notice the included libraries i have used. previously mentioned &amp;ldquo;getopt&amp;rdquo; is the GNU library for CLI options. sys/types.h and sys/stat.h are POSIX libraries for file management and manipulation.
+POSIX also provides the unistd.h library, basically the unix standard library. We also have some classics like stdio, stdlib and string.h which i&amp;rsquo;m using for file path manipulation and listing.
+Now i&amp;rsquo;m going to complain a little bit about getopt, specifically it&amp;rsquo;s variable option buffer system that isn&amp;rsquo;t really intuitive and requires you to do at least some RTFM to understand what&amp;rsquo;s happening/ Basically there is an &amp;ldquo;option pointer&amp;rdquo; or &amp;ldquo;optind&amp;rdquo;, the arguments are stored in &amp;ldquo;optopt&amp;rdquo; and the state of getopt is stored in &amp;ldquo;opt&amp;rdquo;. These variables are predeterminedand can&amp;rsquo;t be easily changed without modifying getopt itself. I have found out about them by looking up multiple getopt tutorials since i couldn&amp;rsquo;t find a mention of them on the manual page or stack overflow. Maybe that&amp;rsquo;s just me being bad at reading, but it was one of my first big hurdles in writing this project.
+The next thing i couldn&amp;rsquo;t figure out was printing something if no argument was passed into the program (in this case just &lt;code&gt;./forg&lt;/code&gt;), in fact i still haven&amp;rsquo;t figured that out since there was no information on it online, and every forum post etc. about it was talking about the &lt;code&gt;getopts&lt;/code&gt; command being used in bash scripts.
+Okay, enough complaining about GNU libs, time for the real meat.
+The next thing i did was making a small clone of &lt;code&gt;ls&lt;/code&gt;, listing files in a directory both recursively and non-recursively. Haven&amp;rsquo;t encountered problems there, and also i have learned a lot about things like UNIX permissions from under the hood. My code thankfully worked as intended, so i moved on to recognizing file formats and sorting files by their type (image, audio, text, other stuff etc.). That was my biggest challenge since i could implement that with multiple different techniques:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;use a mime file type file included in most systems&lt;/li&gt;
+&lt;li&gt;use a configuration file&lt;/li&gt;
+&lt;li&gt;use a lookup table&lt;/li&gt;
+&lt;li&gt;something else, probably&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At first i wanted to parse file types from the mime globs file, but later i have realized that on servers and embedded systems things like this don&amp;rsquo;t exist, since they come as a part of desktop environments like Gnome or KDE. So while i already did 75% of the work, i scrapped that idea and decided to use a normal lookup table containing all of the formats mapped to their specific type codes:&lt;/p&gt;
+&lt;ol start=&#34;0&#34;&gt;
+&lt;li&gt;text files, pdf documents etc.&lt;/li&gt;
+&lt;li&gt;videos&lt;/li&gt;
+&lt;li&gt;audio&lt;/li&gt;
+&lt;li&gt;images&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;everything else (projects for specific software, binary files etc.) would go in the &amp;ldquo;other&amp;rdquo; category.
+This system thankfully worked flawlessly, and combined with my file listing code it specified a file&amp;rsquo;s format and category. The main advantage of using a built-in lookup table in the code is it working on every system with the program in a binary form. No config files or unnecesary dependencies needed. The only thing the host needs is the core set of utilities like busybox to move files using the mv command, which is invoked by forg (i know it shouldn&amp;rsquo;t and it&amp;rsquo;s bad code, but using a well-coded util is better to implement something myself with a ton of bugs. It&amp;rsquo;s just safer to use popen and leave the sorting to forg).&lt;/p&gt;
+&lt;p&gt;Also i have implemented sorting by filename, where every file including the token in it&amp;rsquo;s name is moved to the appropriate folder, for example &amp;ldquo;bmw-m3.png&amp;rdquo; will be moved into the &amp;ldquo;bmw&amp;rdquo; directory, while something like &amp;ldquo;porsche-911.jpeg&amp;rdquo; won&amp;rsquo;t.&lt;/p&gt;
+&lt;h2 id=&#34;the-purpose-epilogue&#34;&gt;The purpose (epilogue?)&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m happy that forg (at least i think) works as intended and does what i wanted without issue, and developing this little side-project helped me immensely in understanding the UNIX architecture and system calls. For the next few weeks i will focus on improving FOrg and cleaning up it&amp;rsquo;s messy code, maybe even i&amp;rsquo;ll get it into under 200 lines of source. I&amp;rsquo;m going to also focus on documenting it, making a GTK / Qt GUI and maybe even port it to Windows operating systems.
+Also to those that think it should be a bash script, make one. I dare you :3&lt;/p&gt;
+&lt;p&gt;The code is hosted on &lt;a href=&#34;https://github.com/ItzShittyPaper/forg&#34;&gt;https://github.com/ItzShittyPaper/forg&lt;/a&gt;
+Bye. See you in whenever i decide to post again.&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Why design is important in the Free Software space.</title>
@@ -756,6 +837,8 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		
 		<guid>https://zesrajsie.tk/blog/</guid>
 		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2023-07-03T19:48:15&amp;#43;02:00&#34;&gt;2023 Jul 03&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/forg/&#34;&gt;FOrg - writing *NIX-style utilities in C&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2023-04-26T20:30:49&amp;#43;02:00&#34;&gt;2023 Apr 26&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/oss_design/&#34;&gt;Why design is important in the Free Software space.&lt;/a&gt;&lt;/li&gt;
 

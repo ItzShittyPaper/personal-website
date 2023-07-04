@@ -1,0 +1,101 @@
+<link rel="stylesheet" type="text/css" href="/css/nav.css">
+<div class="nigger">
+  <nav id="nav" class="nav justify-content-center">
+
+	  <a href="/index.html">Home</a> 
+	  &bull;
+	  <a href="/blog">Blog</a> 
+	  &bull;
+
+	  <a href="/music/">Music</a> 
+	  &bull;
+	  <a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
+	  &bull;
+	  <a href="/reserve/">Reserve</a> 
+	  &bull;
+    	  <a href="/about/">About Me</a>
+
+  </nav>
+</div>
+<link rel="stylesheet" type="text/css" href="/blog.css">
+<header><h1>FOrg - writing *NIX-style utilities in C</h1></header>
+<article>
+<p><em>Hi, sorry for my absence, and a long break.</em></p>
+<p>In the course of the last month or so i have worked on a file organizer program in C that would fit in with the GNU / BSD Utils. All in 254 lines of code and 190-something SLOC according to github.
+I made it with the purpose of learning POSIX APIs and some GNU ones like <em>getopt</em>. Also i wanted to write something to aid me with my desktop full of icons and other stuff. Before we begin, i&rsquo;d like to say that i&rsquo;m not a professional, or even a semi-professional programmer. My code absolutely sucks and if someone asked me to write &ldquo;FizzBuzz&rdquo; in javascript i would spectacularly fail (probably because i don&rsquo;t know anything about javascript).</p>
+<h2 id="the-programming">The Programming</h2>
+<p>At first i thought that was easy, since i&rsquo;m relatively knowledgable with C and programmed for Linux for 3 years. I started with a typical &ldquo;Hello world!&rdquo; and a getopt while loop to parse command-line arguments.</p>
+<pre tabindex="0"><code>#include &#34;stdio.h&#34;
+#include &#34;stdlib.h&#34;
+#include &#34;ctype.h&#34;
+#include &#34;dirent.h&#34; 
+#include &#34;string.h&#34;
+
+#include &#34;sys/types.h&#34;
+#include &#34;sys/stat.h&#34;
+#include &#34;errno.h&#34;
+#include &#34;unistd.h&#34;
+#include &#34;fcntl.h&#34;
+#include &#34;getopt.h&#34;
+
+int main(int argc, char *argv[]) {
+
+	while((opt = getopt(argc, argv, &#34;:h?&#34;)) != -1) {
+
+		switch(opt)  {
+
+			case &#39;h&#39;:
+				showhelp();
+				return 0;
+				break;
+			case &#39;?&#39;:
+				printf(&#34;Unknown option: %c\n&#34;, optopt);
+				break;
+			case &#39;:&#39;:
+				printf(&#34;Missing arg for %c\n&#34;, optopt);
+				break;
+		} 
+	} 
+
+	/* optind is for the extra arguments  which are not parsed */
+	for(int index = optind; index &lt; argc; index++ &amp;&amp; flags.verbose != 0){     
+		printf(&#34;extra arguments: %s\n&#34;, argv[optind]);
+	}
+     
+	return 0;
+
+}
+</code></pre><p>Notice the included libraries i have used. previously mentioned &ldquo;getopt&rdquo; is the GNU library for CLI options. sys/types.h and sys/stat.h are POSIX libraries for file management and manipulation.
+POSIX also provides the unistd.h library, basically the unix standard library. We also have some classics like stdio, stdlib and string.h which i&rsquo;m using for file path manipulation and listing.
+Now i&rsquo;m going to complain a little bit about getopt, specifically it&rsquo;s variable option buffer system that isn&rsquo;t really intuitive and requires you to do at least some RTFM to understand what&rsquo;s happening/ Basically there is an &ldquo;option pointer&rdquo; or &ldquo;optind&rdquo;, the arguments are stored in &ldquo;optopt&rdquo; and the state of getopt is stored in &ldquo;opt&rdquo;. These variables are predeterminedand can&rsquo;t be easily changed without modifying getopt itself. I have found out about them by looking up multiple getopt tutorials since i couldn&rsquo;t find a mention of them on the manual page or stack overflow. Maybe that&rsquo;s just me being bad at reading, but it was one of my first big hurdles in writing this project.
+The next thing i couldn&rsquo;t figure out was printing something if no argument was passed into the program (in this case just <code>./forg</code>), in fact i still haven&rsquo;t figured that out since there was no information on it online, and every forum post etc. about it was talking about the <code>getopts</code> command being used in bash scripts.
+Okay, enough complaining about GNU libs, time for the real meat.
+The next thing i did was making a small clone of <code>ls</code>, listing files in a directory both recursively and non-recursively. Haven&rsquo;t encountered problems there, and also i have learned a lot about things like UNIX permissions from under the hood. My code thankfully worked as intended, so i moved on to recognizing file formats and sorting files by their type (image, audio, text, other stuff etc.). That was my biggest challenge since i could implement that with multiple different techniques:</p>
+<ul>
+<li>use a mime file type file included in most systems</li>
+<li>use a configuration file</li>
+<li>use a lookup table</li>
+<li>something else, probably</li>
+</ul>
+<p>At first i wanted to parse file types from the mime globs file, but later i have realized that on servers and embedded systems things like this don&rsquo;t exist, since they come as a part of desktop environments like Gnome or KDE. So while i already did 75% of the work, i scrapped that idea and decided to use a normal lookup table containing all of the formats mapped to their specific type codes:</p>
+<ol start="0">
+<li>text files, pdf documents etc.</li>
+<li>videos</li>
+<li>audio</li>
+<li>images</li>
+</ol>
+<p>everything else (projects for specific software, binary files etc.) would go in the &ldquo;other&rdquo; category.
+This system thankfully worked flawlessly, and combined with my file listing code it specified a file&rsquo;s format and category. The main advantage of using a built-in lookup table in the code is it working on every system with the program in a binary form. No config files or unnecesary dependencies needed. The only thing the host needs is the core set of utilities like busybox to move files using the mv command, which is invoked by forg (i know it shouldn&rsquo;t and it&rsquo;s bad code, but using a well-coded util is better to implement something myself with a ton of bugs. It&rsquo;s just safer to use popen and leave the sorting to forg).</p>
+<p>Also i have implemented sorting by filename, where every file including the token in it&rsquo;s name is moved to the appropriate folder, for example &ldquo;bmw-m3.png&rdquo; will be moved into the &ldquo;bmw&rdquo; directory, while something like &ldquo;porsche-911.jpeg&rdquo; won&rsquo;t.</p>
+<h2 id="the-purpose-epilogue">The purpose (epilogue?)</h2>
+<p>I&rsquo;m happy that forg (at least i think) works as intended and does what i wanted without issue, and developing this little side-project helped me immensely in understanding the UNIX architecture and system calls. For the next few weeks i will focus on improving FOrg and cleaning up it&rsquo;s messy code, maybe even i&rsquo;ll get it into under 200 lines of source. I&rsquo;m going to also focus on documenting it, making a GTK / Qt GUI and maybe even port it to Windows operating systems.
+Also to those that think it should be a bash script, make one. I dare you :3</p>
+<p>The code is hosted on <a href="https://github.com/ItzShittyPaper/forg">https://github.com/ItzShittyPaper/forg</a>
+Bye. See you in whenever i decide to post again.</p>
+<br>
+<br>
+<br>
+<a>copyright lololol</a>
+<br>
+<a>made by m4kulatura</a>
+
