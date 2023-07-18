@@ -3,11 +3,13 @@
 
 body {
 
-  background-color: #0097ff;
+  background-image: url(/noise_pattern_bg.png);
   text-align: center;
+  height: 100%;
   width: 75%;
+  background-repeat: repeat;
+  background-attachment: fixed;
   margin: auto;
-  align-content: center;
 
 }
 			
@@ -16,6 +18,7 @@ nav {
   margin: auto;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
+  color: #ff6500;				
 
 }
 
@@ -34,6 +37,7 @@ h1 {
   font-size: 24px;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
+  color: #FFFFFF;
 
 }
 
@@ -50,6 +54,7 @@ a {
   margin: auto;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
+  color: #ff6500;				
 
 }
 
@@ -60,6 +65,7 @@ time {
   font-size: 24px;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
+  color: #FFFFFF;
 
 }
 
@@ -69,18 +75,21 @@ h2 {
   font-size: 18px;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;				
+  color: #FFFFFF;
 
 }
 
 p {
 
   font-family: 'IBM Plex Mono', monospace;
+  color: #FFFFFF;
 
 }
 
 li {
 
   font-family: 'IBM Plex Mono', monospace;
+  color: #FFFFFF;
 
 }
 
@@ -88,6 +97,7 @@ code {
 
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12px;
+  color: #FFFFFF;
 
 }
 
