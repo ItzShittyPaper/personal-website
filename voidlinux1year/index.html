@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="/css/nav.css">
+<div class="site">
+  <nav id="nav" class="nav justify-content-center">
+
+	  <a href="/index.html">Home</a> 
+	  &bull;
+	  <a href="/blog">Blog</a> 
+	  &bull;
+
+	  <a href="/music/">Music</a> 
+	  &bull;
+	  <a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
+	  &bull;
+	  <a href="/reserve/">Reserve</a> 
+	  &bull;
+    	  <a href="/about/">About Me</a>
+
+  </nav>
+</div>
+<link rel="stylesheet" type="text/css" href="/blog.css">
+<header><h1>Void Linux: a Year long review</h1></header>
+<article>
+<p><em>tl;dr: don&rsquo;t use it</em></p>
+<p>Void Linux is one of those distros that you should probably setup on a secondary, low-powered machine that doesn&rsquo;t run modern Windows very well. That is the best use for a &ldquo;DIY&rdquo; distro, after all. You set it up with your computer in mind to get maximum performance available, and then sit back and use it sometimes for watching movies, torrenting and other stuff like that - nothing serious. After using this distribution for a year, i am pretty confident that this is how void isa being developed and tested, and that most people don&rsquo;t run it on their main machines. The height of the thinkpad meme (and i&rsquo;m saying this as a person that actually bought a thinkpad, even though i don&rsquo;t really need one and i use it only on trips occasionally, maybe in bed).
+Too bad i decided to completely disregard it and install it on my main production machine i&rsquo;m literally writing this on. Now i&rsquo;m on openSUSE Tumbleweed, after over a year of using Void on this PC. Today i want to share my experience with Void, and highlight where it&rsquo;s really good, and where it shits itself - which is arguably more important.</p>
+<h2 id="the-good">The Good!</h2>
+<p>Let&rsquo;s start with what Void Linux does right, just to add some pint of optimism to this rant about the distro. At first i should mention that void is really fast. Like it&rsquo;s one of the fastest distros i have ever used, better than even most of my arch setups. While it&rsquo;s not optimized like gentoo, it&rsquo;s good enough for most people. The kernel uses a reasonable configuration, but you might have problems with the realtek wi-fi drivers. I don&rsquo;t know honestly, generally hardware support isn&rsquo;t bad at all. The best thing about Void is probably the guided installer, which automatically installs the base OS so you can configure it. It kinda resembles systems like Slackware or even MS-DOS, making for a good compromise between modern graphical installation programs and the manual setup of Arch and Gentoo.
+Also it&rsquo;s fully in the command line, working even in secure shell and other environments where graphics aren&rsquo;t a priority. Or to put it in a different way, the installer will still work without graphics drivers, it won&rsquo;t crash on you.
+You obviously can also use your system for recovery, but it&rsquo;s not ideal. I&rsquo;d rather use something like debian or even Ubuntu. XBPS is also a pretty good packaging system, it&rsquo;s one of the more lightwieght ones, and it&rsquo;s better than stuff you get in Arch and Debian for example. The only thing i&rsquo;d want is a single feature from <code>apt</code>, the autoremove which automatically removes unnecessary dependencies. You CAN remove a package with all it&rsquo;s redundant dependencies, but if you forget to uninstall it with <code>-R</code>, you&rsquo;re screwed, the dependencies stay on your system and you can easily forget about them.
+Obviously i should state the obvious. This is a do it yourself distro, you can pick yourself every element of your system, like the desktop environment and most software. It&rsquo;s generally a good balance between hellholes like gentoo and the ease of use (and rigidity) of stuff like Ubuntu or Manjaro.
+But, that&rsquo;s where the good parts end i think, the rest is really bad and infuriating, knowing how good this distribution could be.</p>
+<h2 id="the-bad">The Bad</h2>
+<p>Now let&rsquo;s talk about the bad, infuriating, and truly crap parts of Void Linux. It can be really bad sometimes, so let&rsquo;s just get into it.
+First, runit is really confusing at parts, it&rsquo;s nearly undocumented, so you can do something wrong and never recieve an error. It&rsquo;s literally ed levels of feedback, and you often have to rely on your intuition with runit. The same goes for some features of the XBPS package manager. Also the packaging of some programs like GNOME is weird, providing outdated software and requiring additional setup, which is something that you&rsquo;re never told about. The GDM package is really tricky for example. Another big problem are the repositories, which very often don&rsquo;t have what you want, for example most proprietary apps like Discord, or the remote desktop tool Parsec. For some reason steam is in the main repos though. I don&rsquo;t know why that&rsquo;s the case, but i suspect one of the maintainers really depends on steam, or they just like valve. You actually CAN install discord through the void-packages repository, where you can use a tool called xbps-src, that is similar to the AUR (while not being entirely user contributed, it&rsquo;s a very small selection of additional packages from my experience) to install it. Apparently you can also use it to install parsec, but i didn&rsquo;t have any luck with it. Generally it&rsquo;s really confusing. These packages break often and after some time i had to just use the provided tarball for discord / use the browser, which is a bummer. I wouldn&rsquo;t use discord in the first place but i need it to contact my friends, so you know how it is.
+If you want more advanced stuff like ROCm, just forget about it. I don&rsquo;t think you can get blender to use your GPU at all, no matter the vendor. It&rsquo;s not possible on AMD, and it&rsquo;s probably shitty on NVIDIA graphics cards as well. What a shame.
+Another thing is also flatpaks were broken on my system, so replacing the often breaking packages from void with their flatpak counterparts (previously mentioned discord, parsec) didn&rsquo;t work, it just made the issue much worse. Flatpak packages on void often had problems with theming, detection of the microphone, file picker issues etc. Wouldn&rsquo;t recommend.
+I haven&rsquo;t tried snaps, but they have their own problems so i don&rsquo;t think i should try them anytime soon. Generally the OS can gather bitrot pretty quickly without maintenance due to broken packages etc. It&rsquo;s the only rolling release that made me actually cautious of updating the OS after a while. In most systems like arch i could update after 2 months of not upgrading anything and it would work reasonably well, sadly that isn&rsquo;t the case with Void. I often would have to switch desktop environments because of breakages, and while at the start i used GNOME 40 / 41 (i don&rsquo;t remember exactly), at the end i used MATE, and used almost everything from KDE to window managers and XFCE. Void acts like Windows Millenium in a way, just gathering bugs quicker than it should.
+I need to also criticize the Void team a little bit. Their documentation is awful and it&rsquo;s nearly empty. It doesn&rsquo;t contain any information regarding actually installing packages an such, only general stuff and a quick XBPS tutorial. It&rsquo;s a far cry from resources like the arch or gentoo wiki, which are much more helpful despite not being made with void linux in mind. The worst thing is that previously there was a Void Linux wiki, that was probably much better and it actually did contain useful information. Sadly they closed it i think. Now all you get is a simple &ldquo;Void Linux Docs&rdquo; page that contains as much info as an Apple quick start guide.</p>
+<h2 id="the-conclusion">The Conclusion</h2>
+<p>To wrap up my rant, i&rsquo;m going to say that void is a really fast distro and it&rsquo;s generally usable for those who want a Linux for their secondary machine (a laptop, old pc etc.), it&rsquo;s unfortunately not suitable for a main production system, and it lacks many important packages that people use every day on other distributions. Runit - while fast - lacks important info and can be confusing. I wouldn&rsquo;t recommend it over something like openrc that is almost just as fast with parallelization enabled. If you want a &ldquo;do it yourself&rdquo; linux just get arch or something else, void&rsquo;s not worth your time until they fix these problems, and a few more. Sorry for being a downer i guess.</p>
+<br>
+<br>
+<br>
+<a>me and my friends: <a>
+<a href="https://sugary.kemonomimi.gay" target="_blank"><img src="/sugary_button.gif" style="display: inline; margin:auto; width:auto;"></a>
+<a href="index.html" target="_blank"><img src="/m4k_button.gif" style="display: inline; margin:auto; width:auto;"></a> <br>
+<a>made by m4kulatura</a> <br>
+
