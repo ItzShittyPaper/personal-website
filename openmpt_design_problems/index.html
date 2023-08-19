@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="/nav.css">
+<div class="navbar">
+  <nav class="nav justify-content-center" >
+
+	  <a href="/index.html">Home</a> 
+	  &bull;
+	  <a href="/blog">Blog</a> 
+	  &bull;
+
+	  <a href="/music/">Music</a> 
+	  &bull;
+	  <a href="https://www.youtube.com/channel/UCUc3Y7iwaDpzUdUpmbeP3uw">Youtube</a> 
+	  &bull;
+	  <a href="/reserve/">Reserve</a> 
+	  &bull;
+    	  <a href="/about/">About Me</a>
+
+  </nav>
+</div>
+<link rel="stylesheet" type="text/css" href="/blog.css">
+<header><h1>OpenMPT&#39;s Design Problems: and my solutions.</h1></header>
+<article>
+<p>Hi, i&rsquo;m bored again. This article is mostly just me taking a break from other projects. One of these projects is my upcoming album, which takes a lot of time to make due to it&rsquo;s complexity, my lack of ideas etc.
+But also one of the reasons is OpenMPT&rsquo;s general crappiness in terms of both UI and UX. The entire team while developing ModPlug Tracker made some really questionable decisions, and i honestly want to correct them. Maybe not as a fork, not as a proof-of-concept hack, but as an idea with some mockups. Ok, let&rsquo;s get into it.</p>
+<h2 id="how-openmpt-works-and-how-it-looks-while-doing-it">How OpenMPT works, and how it looks while doing it</h2>
+<p>
+<figure ><img src="../img/openmpt/openmpt.png" alt="openmpt"></figure>
+
+<strong>openmpt running on windows 7, taken from wikipedia</strong></p>
+<p>Let&rsquo;s first look at OpenMPT&rsquo;s design critically. The first thing i should note - mostly because it&rsquo;s not apparent when looking at the picture - is that ModPlug Tracker is a multi-window application, similar to old versions of the Windows explorer, before it got reworked in Windows 95. It is mostly a good thing though, it means you can easily work on many modules in a single instance of the application. It&rsquo;s also very well done, letting the user even minimize the module window to the bottom of the screen. The only problem i have with this feature is the fact that the window control buttons are slightly misplaced and hard to see while maximized.
+Now we should look at the 2 bars on the top, one of which is the tabbed module window bar, and the one on the top of the window is the general application bar. I also want to later talk about the menu bar, but let&rsquo;s leave it for later.
+The bars have some duplicate buttons which shouldn&rsquo;t really be there in my opinion. Both stop buttons do the same thing, and inexperienced users might have a problem differentiating these 2 sections. Also the record button on the pattern bar could be moved to work globally, saving some screen real estate. The application bar is really sparse, having many unnecessary buttons while not having enough options to be really useful. Things like the tempo and &ldquo;speed&rdquo; input fields shouldn&rsquo;t be global, since they differ with every module, and are also available in the &ldquo;general&rdquo; tab of the module window. Much of the info on the bottom status bar could also be moved to the top.
+The module window bar is resizable, and it shouldn&rsquo;t. i would make it a fixed size, especially with the widgets we see here.
+The file browser is really flawed, based on a 2-window system that is confusing. The top view only views your midi library and your current modules, and that works fine. But the bottom one is practically useless, mostly because it fails at being a sample browser. It doesn&rsquo;t show directories in a tree - or in any way for that matter - , and when changing the current directory to look at some samples you&rsquo;re greeted with the default windows file picker, which just makes everything clunky. This UI element is only marginally better than just opening every sample individually and playing it. My solution would be to move everything to the top panel, and remove the bottom one completely. The browser could be also used to show things like VST plugins and such, making it more universal in the process.
+Ok, so i said that i was going to talk about the default windows menu bar on the very top. It&rsquo;s really weird since many of it&rsquo;s functions, that are in the same place in many other applications (undo, redo in &ldquo;Edit&rdquo; and stuff like that), have other buttons in different places, stuff like that really needs a cleanup, and a lot of the visual clutter could be removed by just moving advanced features in the top menu, which exists here for a reason.</p>
+<h2 id="my-solution">My &ldquo;Solution&rdquo;</h2>
+<p>
+<figure ><img src="../img/openmpt/openmpt_improved.png" alt="improved openmpt"></figure>
+
+<strong>my mockup containing some simple changes</strong></p>
+<p>First thing: remove visual clutter. The first thing i did was removing some unneeded buttons that don&rsquo;t do anything major. All of that should still be accessible in the menu bar anyways.
+Second, i have decided to remove the bottom browser view, merging everything together. I also have removed the status bar, saving some creen real estate. The unintuitive placement of the play and record buttons has been corrected, while also moving the tempo boxes to the module window, mostly because the tempo changed with every module.
+All of these changes should be really easy to implement generally, and it shouldn&rsquo;t take much work. Probably, i&rsquo;m not an expert on the win32 api. You can obviously see some more changes here, but i don&rsquo;t feel like turning this int o a bucket list of everything i have changed.</p>
+<p>I have also made the mixer more approachable, by removing the flawed tabbed design and made it scrollable like in most software.</p>
+
+<figure ><img src="../img/openmpt/general_tab_improved.png" alt="openmpt&#39;s improved mixer"></figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>OpenMPT can be vastly improved with some simple changes. In a way i&rsquo;m really frustrated with the development team that doesn&rsquo;t make any changes, and just maintains the program. I personally now consider OpenMPT abandonware, even if it gets updates every other month.
+I&rsquo;m getting tired, i&rsquo;ll upload this tomorrow. Have fun out there!</p>
+<br>
+<br>
+<br>
+<a>me and my friends: <a>
+<a href="https://sugary.kemonomimi.gay" target="_blank"><img src="/sugary_button.gif" style="display: inline; margin:auto; width:auto;"></a>
+<a href="index.html" target="_blank"><img src="/m4k_button.gif" style="display: inline; margin:auto; width:auto;"></a> <br>
+<a>made by m4kulatura</a> <br>
+

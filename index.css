@@ -32,9 +32,22 @@ h1 {
 .site {
 
   text-align: center;
-  width: 75%;
+  max-width: 80%;
   margin: auto;
   align-content: center;
+
+	padding-left: 8px;
+	padding-right: 8px;
+
+	border-style: solid; border-color: #000; border-width: 8px; padding-bottom: 8px; padding-top: 8px; 
+
+	background: rgb(43,59,125);
+	background: -moz-linear-gradient(0deg, rgba(43,59,125,1) 0%, rgba(30,46,70,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(43,59,125,1) 0%, rgba(30,46,70,1) 100%);
+	background: linear-gradient(0deg, rgba(43,59,125,1) 0%, rgba(30,46,70,1) 100%);
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#070622,endColorstr=#2e558c,GradientType=1);
+
 
 }
 

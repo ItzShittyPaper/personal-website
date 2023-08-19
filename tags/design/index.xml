@@ -5,10 +5,47 @@
 	<description>Recent content in design on zesrajsie.tk</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Wed, 26 Apr 2023 20:30:49 +0200</lastBuildDate>
+	<lastBuildDate>Fri, 18 Aug 2023 14:00:12 +0200</lastBuildDate>
     
         <atom:link href="https://zesrajsie.tk/tags/design/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>OpenMPT&#39;s Design Problems: and my solutions.</title>
+		<link>https://zesrajsie.tk/openmpt_design_problems/</link>
+		<pubDate>Fri, 18 Aug 2023 14:00:12 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/openmpt_design_problems/</guid>
+		<description>&lt;p&gt;Hi, i&amp;rsquo;m bored again. This article is mostly just me taking a break from other projects. One of these projects is my upcoming album, which takes a lot of time to make due to it&amp;rsquo;s complexity, my lack of ideas etc.
+But also one of the reasons is OpenMPT&amp;rsquo;s general crappiness in terms of both UI and UX. The entire team while developing ModPlug Tracker made some really questionable decisions, and i honestly want to correct them. Maybe not as a fork, not as a proof-of-concept hack, but as an idea with some mockups. Ok, let&amp;rsquo;s get into it.&lt;/p&gt;
+&lt;h2 id=&#34;how-openmpt-works-and-how-it-looks-while-doing-it&#34;&gt;How OpenMPT works, and how it looks while doing it&lt;/h2&gt;
+&lt;p&gt;
+&lt;figure &gt;&lt;img src=&#34;../img/openmpt/openmpt.png&#34; alt=&#34;openmpt&#34;&gt;&lt;/figure&gt;
+
+&lt;strong&gt;openmpt running on windows 7, taken from wikipedia&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s first look at OpenMPT&amp;rsquo;s design critically. The first thing i should note - mostly because it&amp;rsquo;s not apparent when looking at the picture - is that ModPlug Tracker is a multi-window application, similar to old versions of the Windows explorer, before it got reworked in Windows 95. It is mostly a good thing though, it means you can easily work on many modules in a single instance of the application. It&amp;rsquo;s also very well done, letting the user even minimize the module window to the bottom of the screen. The only problem i have with this feature is the fact that the window control buttons are slightly misplaced and hard to see while maximized.
+Now we should look at the 2 bars on the top, one of which is the tabbed module window bar, and the one on the top of the window is the general application bar. I also want to later talk about the menu bar, but let&amp;rsquo;s leave it for later.
+The bars have some duplicate buttons which shouldn&amp;rsquo;t really be there in my opinion. Both stop buttons do the same thing, and inexperienced users might have a problem differentiating these 2 sections. Also the record button on the pattern bar could be moved to work globally, saving some screen real estate. The application bar is really sparse, having many unnecessary buttons while not having enough options to be really useful. Things like the tempo and &amp;ldquo;speed&amp;rdquo; input fields shouldn&amp;rsquo;t be global, since they differ with every module, and are also available in the &amp;ldquo;general&amp;rdquo; tab of the module window. Much of the info on the bottom status bar could also be moved to the top.
+The module window bar is resizable, and it shouldn&amp;rsquo;t. i would make it a fixed size, especially with the widgets we see here.
+The file browser is really flawed, based on a 2-window system that is confusing. The top view only views your midi library and your current modules, and that works fine. But the bottom one is practically useless, mostly because it fails at being a sample browser. It doesn&amp;rsquo;t show directories in a tree - or in any way for that matter - , and when changing the current directory to look at some samples you&amp;rsquo;re greeted with the default windows file picker, which just makes everything clunky. This UI element is only marginally better than just opening every sample individually and playing it. My solution would be to move everything to the top panel, and remove the bottom one completely. The browser could be also used to show things like VST plugins and such, making it more universal in the process.
+Ok, so i said that i was going to talk about the default windows menu bar on the very top. It&amp;rsquo;s really weird since many of it&amp;rsquo;s functions, that are in the same place in many other applications (undo, redo in &amp;ldquo;Edit&amp;rdquo; and stuff like that), have other buttons in different places, stuff like that really needs a cleanup, and a lot of the visual clutter could be removed by just moving advanced features in the top menu, which exists here for a reason.&lt;/p&gt;
+&lt;h2 id=&#34;my-solution&#34;&gt;My &amp;ldquo;Solution&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;
+&lt;figure &gt;&lt;img src=&#34;../img/openmpt/openmpt_improved.png&#34; alt=&#34;improved openmpt&#34;&gt;&lt;/figure&gt;
+
+&lt;strong&gt;my mockup containing some simple changes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First thing: remove visual clutter. The first thing i did was removing some unneeded buttons that don&amp;rsquo;t do anything major. All of that should still be accessible in the menu bar anyways.
+Second, i have decided to remove the bottom browser view, merging everything together. I also have removed the status bar, saving some creen real estate. The unintuitive placement of the play and record buttons has been corrected, while also moving the tempo boxes to the module window, mostly because the tempo changed with every module.
+All of these changes should be really easy to implement generally, and it shouldn&amp;rsquo;t take much work. Probably, i&amp;rsquo;m not an expert on the win32 api. You can obviously see some more changes here, but i don&amp;rsquo;t feel like turning this int o a bucket list of everything i have changed.&lt;/p&gt;
+&lt;p&gt;I have also made the mixer more approachable, by removing the flawed tabbed design and made it scrollable like in most software.&lt;/p&gt;
+
+&lt;figure &gt;&lt;img src=&#34;../img/openmpt/general_tab_improved.png&#34; alt=&#34;openmpt&amp;#39;s improved mixer&#34;&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;OpenMPT can be vastly improved with some simple changes. In a way i&amp;rsquo;m really frustrated with the development team that doesn&amp;rsquo;t make any changes, and just maintains the program. I personally now consider OpenMPT abandonware, even if it gets updates every other month.
+I&amp;rsquo;m getting tired, i&amp;rsquo;ll upload this tomorrow. Have fun out there!&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Void Linux: a Year long review</title>
@@ -864,6 +901,8 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		
 		<guid>https://zesrajsie.tk/blog/</guid>
 		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2023-08-18T14:00:12&amp;#43;02:00&#34;&gt;2023 Aug 18&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/openmpt_design_problems/&#34;&gt;OpenMPT&amp;#39;s Design Problems: and my solutions.&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2023-08-05T20:13:52&amp;#43;02:00&#34;&gt;2023 Aug 05&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/voidlinux1year/&#34;&gt;Void Linux: a Year long review&lt;/a&gt;&lt;/li&gt;
 
