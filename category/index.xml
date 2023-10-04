@@ -5,10 +5,27 @@
 	<description>Recent content in Category on zesrajsie.tk</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Fri, 18 Aug 2023 14:00:12 +0200</lastBuildDate>
+	<lastBuildDate>Wed, 04 Oct 2023 20:01:31 +0200</lastBuildDate>
     
         <atom:link href="https://zesrajsie.tk/category/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>sleep deprivation bingo: a weirdly personal blogpost</title>
+		<link>https://zesrajsie.tk/sleepdeprivationbingo/</link>
+		<pubDate>Wed, 04 Oct 2023 20:01:31 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/sleepdeprivationbingo/</guid>
+		<description>&lt;p&gt;&lt;em&gt;yaaay, another post on my blog.&lt;/em&gt;
+&lt;em&gt;it&amp;rsquo;s been a long time since i posted anything here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Today i want to talk about sleep deprivation a bit. Mostly because the last few months were really hard for me, and due to burnout and me being generally overworked I haven&amp;rsquo;t been getting enough sleep lately. For a long time I coped with it with high caffeine consumption - mostly coffee and energy drinks. This usually works fine, but living on a combination of drugs, caffeine and self-determination isn&amp;rsquo;t very healthy long-term. My heart is probably broken beyond repair now lol.&lt;/p&gt;
+&lt;p&gt;I started working on my game engine in the meantime. Now it only fuels one or two shitty meme games, but i plan on making it one of the better 2D engines out there. I want it to be capable while not compromising on performance, usability be damned. I also started working on a new album, something actually good. I&amp;rsquo;m also experimenting with vocals for some songs, so it won&amp;rsquo;t be all instrumental shit with some occasional stolen vox sample. Usually im really embarrassed of talking to the microphone so it&amp;rsquo;s hard for me to do all that, and I have to try and fix the shitty audio in post, which rarely works. Such is like I guess. BTW im also working on a bandcamp page for my music, so that it won&amp;rsquo;t be tied to my website anymore.&lt;/p&gt;
+&lt;p&gt;Ok enough of the music and programming stuff that ate up all of my summer holidays: Am I the only one that feels like that person everyone relies on, but no one cares about? Many people ask me to do stuff for them, but then just shut up for a while and don&amp;rsquo;t talk to me. It&amp;rsquo;s weird being honest. Some people just straight up insult me after talking to me for some time. I feel like the best method of talking to people is to just cut them off for a month and then meeting them again on purpose pretending you forgot about them.&lt;/p&gt;
+&lt;p&gt;Ehh&amp;hellip; I&amp;rsquo;m getting pretty tired. Ironic, isn&amp;rsquo;t it?
+I should slowly do less stuff in a day, maybe quit one of my hobbies? idk
+Have fun, and a nice sleep.&lt;/p&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>OpenMPT&#39;s Design Problems: and my solutions.</title>
@@ -650,9 +667,9 @@ A torrent tracker is a server that - as the name suggests - tracks peers across 
 		
 		<guid>https://zesrajsie.tk/music/</guid>
 		<description>&lt;p&gt;yeah, i make music. nothing really interesting.
-started as a small side project, and now it&amp;rsquo;s the main thing i do.
-i used almost everything from FL Studio to MOD Trackers like OpenMPT or the OGs like Impulse Tracker and FastTracker II.
-here, have some of my albums, some sound bad, some sound good:&lt;/p&gt;
+it&amp;rsquo;s the main thing i do lol.
+i have used almost everything from FL Studio to MOD Trackers like OpenMPT or the OGs like Impulse Tracker and FastTracker II.
+here, have some of my albums / singles, some sound bad, some sound good:&lt;/p&gt;
 &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/music.css&#34;&gt;
 &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://zesrajsie.tk/blog.css&#34;&gt;
 &lt;div class=&#34;grid&#34;&gt;
@@ -700,9 +717,14 @@ here, have some of my albums, some sound bad, some sound good:&lt;/p&gt;
 		
 &lt;/div&gt;
 
-&lt;p&gt;&lt;em&gt;NOTE: ADD SOME SAMPLES HERE SO PEOPLE WOULD LISTEN TO YOUR SHIT&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;all of my tracker modules (at the time of writing this) (more free music !!! )&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mega.nz/file/JWhyhYTb#R5hu0qFe2qHGO2-njYW-YHgpvR_nM7PH81PPXh8GoQE&#34;&gt;downwoad it uwu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I also have a bandcamp page now, so you can listen to / download the best of my tracks there:
+&lt;a href=&#34;https://m4kulatura.bandcamp.com&#34;&gt;bandcamp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Im usually against streaming services, but bandcamp lets people actually download my stuff, so i treat it more like a file hosting site rather than anything else.&lt;/p&gt;
+&lt;p&gt;Also i have a &amp;ldquo;The Mod Archive&amp;rdquo; profile for my tracker music:
+&lt;a href=&#34;https://modarchive.org/index.php?request=view_profile&amp;amp;query=94518&#34;&gt;TMA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;NOTE: ADD MORE SAMPLES HERE SO PEOPLE WOULD LISTEN TO YOUR SHIT&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;an archive of all of my tracker modules (as of like 2022, it&amp;rsquo;s an old link) (more free music !!! )
+&lt;a href=&#34;https://mega.nz/file/JWhyhYTb#R5hu0qFe2qHGO2-njYW-YHgpvR_nM7PH81PPXh8GoQE&#34;&gt;download the entire thing&lt;/a&gt;&lt;/p&gt;
 </description>
 	</item>
 	
@@ -901,6 +923,8 @@ Most people said that they were &lt;strong&gt;[REDACTED]&lt;/strong&gt;&lt;/p&gt
 		
 		<guid>https://zesrajsie.tk/blog/</guid>
 		<description>&lt;p&gt;My blog, i usually talk about technology, but i do other things as well.&lt;/p&gt;
+
+	&lt;li&gt;&lt;time datetime=&#34;2023-10-04T20:01:31&amp;#43;02:00&#34;&gt;2023 Oct 04&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/sleepdeprivationbingo/&#34;&gt;sleep deprivation bingo: a weirdly personal blogpost&lt;/a&gt;&lt;/li&gt;
 
 	&lt;li&gt;&lt;time datetime=&#34;2023-08-18T14:00:12&amp;#43;02:00&#34;&gt;2023 Aug 18&lt;/time&gt; &amp;ndash; &lt;a href=&#34;https://zesrajsie.tk/openmpt_design_problems/&#34;&gt;OpenMPT&amp;#39;s Design Problems: and my solutions.&lt;/a&gt;&lt;/li&gt;
 
