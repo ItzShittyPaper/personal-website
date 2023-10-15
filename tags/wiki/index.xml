@@ -11,6 +11,36 @@
 	
 	
 	<item>
+		<title>kektech: The &#39;no-compromises&#39; 2D multimedia engine</title>
+		<link>https://zesrajsie.tk/kektech/</link>
+		<pubDate>Sun, 15 Oct 2023 07:55:58 +0200</pubDate>
+		
+		<guid>https://zesrajsie.tk/kektech/</guid>
+		<description>
+&lt;figure &gt;&lt;img src=&#34;https://zesrajsie.tk/kektechbanner.png&#34; alt=&#34;kektech&amp;#39;s logo banner, with it&amp;#39;s mascot, peppy. illustrated by m4kulatura&#34;&gt;&lt;/figure&gt;
+
+&lt;p&gt;kektech is a simple game engine that&amp;rsquo;s focused on performance. Built on top of the reliable SDL library.
+kektech provides an easy to use API that makes programming in C fun and efficient, so you can focus on your project while the engine handles everything else.&lt;/p&gt;
+&lt;p&gt;while the project is a work-in-progress for now, most things are already done, like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;textures and a primitive rendering system suitable for basic geometry&lt;/li&gt;
+&lt;li&gt;a simple input system that detects key presses and releases&lt;/li&gt;
+&lt;li&gt;TTF font support&lt;/li&gt;
+&lt;li&gt;tilemapping using a custom map format, datadesk&lt;/li&gt;
+&lt;li&gt;music and SFX playback (WAV, OGG, tracker modules like XM or IT)
+and&lt;/li&gt;
+&lt;li&gt;a simple GUI library, kkui&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The engine is optimised for UNIX systems, but should work on Windows platforms just fine, since it doesn&amp;rsquo;t use any libs from POSIX.&lt;/p&gt;
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;sadly there is no documentation for the engine currently, but im working on it! if you have any questions, please contact me.&lt;/p&gt;
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+&lt;p&gt;the source repository is freely available on GitHub:
+&lt;a href=&#34;https://github.com/ItzShittyPaper/kektech&#34;&gt;https://github.com/ItzShittyPaper/kektech&lt;/a&gt;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>sleep deprivation bingo: a weirdly personal blogpost</title>
 		<link>https://zesrajsie.tk/sleepdeprivationbingo/</link>
 		<pubDate>Wed, 04 Oct 2023 20:01:31 +0200</pubDate>
@@ -54,7 +84,7 @@ Ok, so i said that i was going to talk about the default windows menu bar on the
 &lt;p&gt;First thing: remove visual clutter. The first thing i did was removing some unneeded buttons that don&amp;rsquo;t do anything major. All of that should still be accessible in the menu bar anyways.
 Second, i have decided to remove the bottom browser view, merging everything together. I also have removed the status bar, saving some creen real estate. The unintuitive placement of the play and record buttons has been corrected, while also moving the tempo boxes to the module window, mostly because the tempo changed with every module.
 All of these changes should be really easy to implement generally, and it shouldn&amp;rsquo;t take much work. Probably, i&amp;rsquo;m not an expert on the win32 api. You can obviously see some more changes here, but i don&amp;rsquo;t feel like turning this int o a bucket list of everything i have changed.&lt;/p&gt;
-&lt;p&gt;I have also made the mixer more approachable, by removing the flawed tabbed design and made it scrollable like in most software.&lt;/p&gt;
+&lt;p&gt;I have also made the mixer more approachable, by removing the flawed tabbed design and making it scrollable like in most software.&lt;/p&gt;
 
 &lt;figure &gt;&lt;img src=&#34;../img/openmpt/general_tab_improved.png&#34; alt=&#34;openmpt&amp;#39;s improved mixer&#34;&gt;&lt;/figure&gt;
 
